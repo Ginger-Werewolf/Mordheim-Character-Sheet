@@ -30,22 +30,22 @@
 span.sheet-bold{
   font-weight: 800;
   font-size: medium;
-  font-family: 'Courier New', monospace;
-  color: lime;
+  font-family: 'Times New Roman', monospace;
+  color: black;
 }
 
 label {
   margin: 0px 0px 0px 0px;
   font-size: 1em;
-  color: lime;
-  font-family: 'Courier New', monospace;
+  color: black;
+  font-family: 'Times New Roman', monospace;
 }
 
 labellrg {
   margin: 0px 0px 0px 0px;
   font-size: 1em;
-  color: lime;
-  font-family: 'Courier New', monospace;
+  color: black;
+  font-family: 'Times New Roman', monospace;
 }
 
 /* --------- Inputs ------------- */
@@ -53,15 +53,15 @@ labellrg {
 input[type="text"] {
   background-color: transparent;
   border-style: none none none none;
-  border-color: lime;
-  font-family: 'Courier New', monospace;
+  border-color: black;
+  font-family: 'Times New Roman', monospace;
 }
 
 input[type="number"] {
   background-color: transparent;
   border: none;
-  color: lime;
-  font-family: 'Courier New', monospace;
+  color: black;
+  font-family: 'Times New Roman', monospace;
 }
 
 textarea {
@@ -71,12 +71,12 @@ textarea {
   height: 60%;
   margin-right: 15px;
   margin-left: 15px;
-  color: lime;
-  font-family: 'Courier New', monospace;
+  color: black;
+  font-family: 'Times New Roman', monospace;
 }
 
 input[type="checkbox"] {
-  border-style: solid lime;
+  border-style: solid black;
   border-radius: 0px;
   width: 10px;
   height: 10px;
@@ -87,9 +87,9 @@ input[type="checkbox"] {
 textarea:focus,
 input[type="text"]:focus,
 input[type="number"]:focus{
-  background-color: #000000;
-  color: lime;
-  font-family: 'Courier New', monospace;
+  background-color: #E3DAC9;
+  color: black;
+  font-family: 'Times New Roman', monospace;
 }
 
 /* -----Hides up/down buttons on numberfields that don't need them ---*/
@@ -211,20 +211,20 @@ div.sheet-main {
   grid-gap: 0px;
   width:    846px; /* Defines the width and height of the sheet */
   height:   1650px;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/IOFefj6.jpeg);
-  background-size: 846px 1650px; /* Sets the sheet border image to same size as sheet - Normal Sheet = https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/MM9C2Bx.jpeg 846px 1200px */
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/IOFefj6.jpeg);
+  background-size: 846px 1650px; /* Sets the sheet border image to same size as sheet - Normal Sheet = https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MM9C2Bx.jpeg 846px 1200px */
   background-repeat: no-repeat;
 }
 
 /* Section-specific CSS is written in a way that removes the need to define classes
 on each individual   */
-/* ----https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/K7Jd5kc.png-------------- */
+/* ----https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/K7Jd5kc.png-------------- */
 /* LOGO SECTION */
 
 div.sheet-logo{
   grid-area: logo;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/K7Jd5kc.png?raw=true);
-  /* ---- old https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/kKVVIT1.png-------------- */
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/K7Jd5kc.png?raw=true);
+  /* ---- old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/kKVVIT1.png-------------- */
   background-size: 295px 70px;
   background-repeat: no-repeat;
   margin-left: 20px;
@@ -253,7 +253,7 @@ div.sheet-stbeg{
 
 
 div.sheet-stbeg div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/ctdAK6A.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ctdAK6A.png?raw=true);
   /* DONE Boarder No1 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -265,7 +265,7 @@ div.sheet-stbeg div.sheet-stat-block label{
   width: 100px;
   padding-left: 10px;
   text-align: right;
-  color: lime;
+  color: black;
 }
 
 div.sheet-stbeg input,
@@ -274,7 +274,7 @@ div.sheet-stbeg span{
   width: 60px;
   font-size: 20px;
   font-weight: 600;
-  color: lime;
+  color: black;
   text-align: center;
   padding-left: 20px;
 }
@@ -294,7 +294,7 @@ div.sheet-stats{
 }
 
 div.sheet-stats div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/BiJh8Wj.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BiJh8Wj.png?raw=true);
   /* DONE Boarder No2 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -306,7 +306,7 @@ div.sheet-stats div.sheet-stat-block{
 div.sheet-stats div.sheet-stat-block label{
   width: 90px;
   padding-left: 10px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-stats input,
@@ -315,7 +315,7 @@ div.sheet-stats span{
   width: 60px;
   font-size: 20px;
   font-weight: 600;
-  color: lime;
+  color: black;
   text-align: center;
   padding-left: 20px;
 }
@@ -334,7 +334,7 @@ div.sheet-stend{
 }
 
 div.sheet-stend div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/nuOLlp0.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/nuOLlp0.png?raw=true);
   /* DONE Boarder B */
   background-repeat: no-repeat;
   background-size: contain;
@@ -346,7 +346,7 @@ div.sheet-stend div.sheet-stat-block{
 div.sheet-stend div.sheet-stat-block label{
   width: 90px;
   padding-left: 10px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-stend input,
@@ -355,7 +355,7 @@ div.sheet-stend span{
   width: 60px;
   font-size: 20px;
   font-weight: 600;
-  color: lime;
+  color: black;
   text-align: center;
   padding-left: 20px;
 }
@@ -374,7 +374,7 @@ div.sheet-wounds{
 }
 
 div.sheet-wounds div.sheet-wound-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/iivdVOC.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iivdVOC.png?raw=true);
     /* DONE Boarder No3 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -385,7 +385,7 @@ div.sheet-wounds div.sheet-wound-block{
 div.sheet-wounds div.sheet-wound-block label{
   width: 70px;
   padding-left: 15px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-wounds input,
@@ -410,8 +410,8 @@ div.sheet-armour{
 }
 
 div.sheet-armour div.sheet-armour-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/bCU0AtO.png?raw=true);
-   /* DONE Boarder No4 Old https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/1LJNpFI.png*/
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/bCU0AtO.png?raw=true);
+   /* DONE Boarder No4 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/1LJNpFI.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -422,7 +422,7 @@ div.sheet-armour div.sheet-armour-block label{
   width: 20px;
   padding-left: 10px;
   font-size: 0.8em
-  color: lime;
+  color: black;
 }
 
 div.sheet-armour input,
@@ -433,20 +433,20 @@ div.sheet-armour span{
   font-weight: 600;
   text-align: right;
   padding-left: 0px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-armour div.sheet-armour-block select{
   font-size: 1em;
   font-weight: 600;
-  color: lime;
-  font-family: 'Courier New', monospace;display: block;
+  color: black;
+  font-family: 'Times New Roman', monospace;display: block;
   margin: 0 auto;
   width: 100px;
   padding: 10px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #E3DAC9;
 }
 
 div.sheet-armour span{
@@ -462,8 +462,8 @@ div.sheet-GangerType{
 }
 
 div.sheet-GangerType div.sheet-type-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/jkJjXtv.png?raw=true);
-    /* DONE Boarder Credits old https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/iivdVOC.png*/
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/jkJjXtv.png?raw=true);
+    /* DONE Boarder Credits old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iivdVOC.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -475,20 +475,20 @@ div.sheet-GangerType div.sheet-type-block{
 div.sheet-GangerType div.sheet-type-block label{
   width: 70px;
   padding-left: 35px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-GangerType div.sheet-type-block select{
   font-size: 1em;
   font-weight: 600;
-  color: lime;
-  font-family: 'Courier New', monospace;display: block;
+  color: black;
+  font-family: 'Times New Roman', monospace;display: block;
   margin: 0 auto;
   width: 100px;
   padding: 10px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #E3DAC9;
 }
 
 
@@ -517,7 +517,7 @@ div.sheet-GoldLevel{
 }
 
 div.sheet-GoldLevel div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/iivdVOC.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iivdVOC.png?raw=true);
     /* DONE Boarder No3 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -528,7 +528,7 @@ div.sheet-GoldLevel div.sheet-stat-block{
 div.sheet-GoldLevel div.sheet-stat-block label{
   width: 70px;
   padding-left: 15px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-GoldLevel input,
@@ -556,8 +556,8 @@ div.sheet-name{
 }
 
 div.sheet-name div.sheet-section-small{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/stYtCAP.png?raw=true);
-   /* DONE Old Boarder No5 https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/9UzKr7k.png */
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/stYtCAP.png?raw=true);
+   /* DONE Old Boarder No5 https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/9UzKr7k.png */
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -567,7 +567,7 @@ div.sheet-name div.sheet-section-small{
 div.sheet-name label{
   width: 50px;
   padding-left: 15px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-name input{
@@ -578,19 +578,19 @@ div.sheet-name input{
 div.sheet-name input[type="text"] {
   background-color: transparent;
   border-style: none none none none;
-  border-color: lime;
+  border-color: black;
   font-size: 17px;
   font-weight: 600;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 div.sheet-name input[type="number"] {
   background-color: transparent;
   border: none;
-  color: lime;
+  color: black;
   font-size: 20px;
   font-weight: 600;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 
@@ -600,8 +600,8 @@ div.sheet-name input[type="number"] {
 
 div.sheet-treasure{
   grid-area: treasure;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/8BX8WVX.png?raw=true);
-  /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/ouwuMnb.png*/
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/8BX8WVX.png?raw=true);
+  /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ouwuMnb.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 225px;
@@ -623,8 +623,8 @@ div.sheet-treasure textarea{
 div.sheet-notessect{
   grid-area: notessect;
   margin-left: 15px;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/CzjuDym.png?raw=true);
-  /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/ouwuMnb.png*/
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/CzjuDym.png?raw=true);
+  /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ouwuMnb.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 228px;
@@ -650,7 +650,7 @@ div.sheet-weaponsbeg{
 
 
 div.sheet-weaponsbeg div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/RTfLlmM.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RTfLlmM.png?raw=true);
    /* DONE Boarder No7 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -662,7 +662,7 @@ div.sheet-weaponsbeg div.sheet-stat-block label{
   width: 12px;
   padding-top: 15px;
   text-align: center;
-  color: lime;
+  color: black;
   font-size: 0.9em;
 }
 
@@ -693,7 +693,7 @@ div.sheet-weapons{
 }
 
 div.sheet-weapons div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/GE92DRk.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/GE92DRk.png?raw=true);
     /* DONE Boarder No9 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -705,21 +705,21 @@ div.sheet-weapons div.sheet-stat-block{
 div.sheet-weapons div.sheet-stat-block label{
   width: 35px;
   text-align: center;
-  color: lime;
+  color: black;
   padding-left: 10px;
 }
 
 div.sheet-weapons div.sheet-type-block select{
   font-size: 1em;
   font-weight: 600;
-  color: lime;
-  font-family: 'Courier New', monospace;display: block;
+  color: black;
+  font-family: 'Times New Roman', monospace;display: block;
   margin: 0 auto;
   width: 100px;
   padding: 10px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #E3DAC9;
 }
 
 div.sheet-weapons input,
@@ -750,7 +750,7 @@ div.sheet-weaponsend{
 
 
 div.sheet-weaponsend div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/RXdbRxo.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RXdbRxo.png?raw=true);
      /* DONE Boarder No8 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -762,7 +762,7 @@ div.sheet-weaponsend div.sheet-stat-block{
 div.sheet-weaponsend div.sheet-stat-block label{
   width: 90px;
   padding-left: 10px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-weaponsend input,
@@ -790,7 +790,7 @@ div.sheet-meleewbeg{
 
 
 div.sheet-meleewbeg div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/kV4sW9L.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/kV4sW9L.png?raw=true);
    /* DONE Boarder No7 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -802,7 +802,7 @@ div.sheet-meleewbeg div.sheet-stat-block label{
   width: 12px;
   padding-top: 15px;
   text-align: center;
-  color: lime;
+  color: black;
   font-size: 0.9em;
 }
 
@@ -833,7 +833,7 @@ div.sheet-meleew{
 }
 
 div.sheet-meleew div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/GE92DRk.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/GE92DRk.png?raw=true);
     /* DONE Boarder No9 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -845,21 +845,21 @@ div.sheet-meleew div.sheet-stat-block{
 div.sheet-meleew div.sheet-stat-block label{
   width: 35px;
   text-align: center;
-  color: lime;
+  color: black;
   padding-left: 10px;
 }
 
 div.sheet-meleew div.sheet-type-block select{
   font-size: 1em;
   font-weight: 600;
-  color: lime;
-  font-family: 'Courier New', monospace;display: block;
+  color: black;
+  font-family: 'Times New Roman', monospace;display: block;
   margin: 0 auto;
   width: 100px;
   padding: 10px 10px;
   border: none;
   border-radius: 5px;
-  background-color: #000000;
+  background-color: #E3DAC9;
 }
 
 div.sheet-meleew input,
@@ -888,7 +888,7 @@ div.sheet-meleewend{
 
 
 div.sheet-meleewend div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Necromunda-Character-Sheet/main/images/yNobl4P.png?raw=true);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/yNobl4P.png?raw=true);
      /* DONE Boarder No8 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -900,7 +900,7 @@ div.sheet-meleewend div.sheet-stat-block{
 div.sheet-meleewend div.sheet-stat-block label{
   width: 90px;
   padding-left: 10px;
-  color: lime;
+  color: black;
 }
 
 div.sheet-meleewend input,
@@ -928,7 +928,7 @@ div.sheet-meleewend span{
   margin-left: -7px;
 }
 .sheet-rolltemplate-necMelee .sheet-container {
-  border: 3px solid lime;
+  border: 3px solid black;
   border-radius: 3px;
 }
 
@@ -937,7 +937,7 @@ div.sheet-meleewend span{
   color: var(--header-text-color);
   text-align: left;
   text-transform: capitalize;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   padding: 5px;
   border-bottom: 2px solid black;
 }
@@ -945,7 +945,7 @@ div.sheet-meleewend span{
 .sheet-rolltemplate-necMelee .sheet-title {
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necMelee .sheet-title img.sheet-phoenix {
@@ -961,14 +961,14 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necMelee .sheet-subtitle {
   font-size: 0.9em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necMelee .sheet-container {
-  --header-bg-color: #333333;
+  --header-bg-color: #D7D3C6;
   --header-text-color: #00FF00;
 }
-.sheet-rolltemplate-necMelee .sheet-container.sheet-color-lime {
+.sheet-rolltemplate-necMelee .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
   --header-text-color: #000000;
 }
@@ -985,8 +985,8 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necMelee .sheet-content {
   display: grid;
-  background: #000000;
-  color: lime;
+  background: #E3DAC9;
+  color: black;
   grid-template-columns: auto auto;
   line-height: 1.4em;
 }
@@ -996,7 +996,7 @@ div.sheet-meleewend span{
 }
 
 .sheet-rolltemplate-necMelee .sheet-content .sheet-key {
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
@@ -1004,7 +1004,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necMelee .sheet-content :nth-child(4n+3),
 .sheet-rolltemplate-necMelee .sheet-content :nth-child(4n) {
-  background: #333333;
+  background: #D7D3C6;
 }
 
 .sheet-rolltemplate-necMelee .sheet-desc {
@@ -1021,7 +1021,7 @@ div.sheet-meleewend span{
   margin-left: -7px;
 }
 .sheet-rolltemplate-necRanged .sheet-container {
-  border: 3px solid lime;
+  border: 3px solid black;
   border-radius: 3px;
 }
 
@@ -1030,7 +1030,7 @@ div.sheet-meleewend span{
   color: var(--header-text-color);
   text-align: left;
   text-transform: capitalize;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   padding: 5px;
   border-bottom: 2px solid black;
 }
@@ -1038,7 +1038,7 @@ div.sheet-meleewend span{
 .sheet-rolltemplate-necRanged .sheet-title {
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necRanged .sheet-title img.sheet-phoenix {
@@ -1054,19 +1054,19 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necRanged .sheet-subtitle {
   font-size: 0.9em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necRanged .sheet-RapidFire {
   font-size: 1.0em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necRanged .sheet-container {
-  --header-bg-color: #333333;
+  --header-bg-color: #D7D3C6;
   --header-text-color: #00FF00;
 }
-.sheet-rolltemplate-necRanged .sheet-container.sheet-color-lime {
+.sheet-rolltemplate-necRanged .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
   --header-text-color: #000000;
 }
@@ -1083,8 +1083,8 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necRanged .sheet-content {
   display: grid;
-  background: #000000;
-  color: lime;
+  background: #E3DAC9;
+  color: black;
   grid-template-columns: auto auto;
   line-height: 1.4em;
 }
@@ -1094,7 +1094,7 @@ div.sheet-meleewend span{
 }
 
 .sheet-rolltemplate-necRanged .sheet-content .sheet-key {
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
@@ -1102,7 +1102,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necRanged .sheet-content :nth-child(4n+3),
 .sheet-rolltemplate-necRanged .sheet-content :nth-child(4n) {
-  background: #333333;
+  background: #D7D3C6;
 }
 
 .sheet-rolltemplate-necRanged .sheet-desc {
@@ -1119,7 +1119,7 @@ div.sheet-meleewend span{
   margin-left: -7px;
 }
 .sheet-rolltemplate-necShield .sheet-container {
-  border: 3px solid lime;
+  border: 3px solid black;
   border-radius: 3px;
 }
 
@@ -1128,7 +1128,7 @@ div.sheet-meleewend span{
   color: var(--header-text-color);
   text-align: left;
   text-transform: capitalize;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   padding: 5px;
   border-bottom: 2px solid black;
 }
@@ -1136,7 +1136,7 @@ div.sheet-meleewend span{
 .sheet-rolltemplate-necShield .sheet-title {
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necShield .sheet-title img.sheet-phoenix {
@@ -1152,14 +1152,14 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necShield .sheet-subtitle {
   font-size: 0.9em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necShield .sheet-container {
-  --header-bg-color: #333333;
+  --header-bg-color: #D7D3C6;
   --header-text-color: #00FF00;
 }
-.sheet-rolltemplate-necShield .sheet-container.sheet-color-lime {
+.sheet-rolltemplate-necShield .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
   --header-text-color: #000000;
 }
@@ -1176,8 +1176,8 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necShield .sheet-content {
   display: grid;
-  background: #000000;
-  color: lime;
+  background: #E3DAC9;
+  color: black;
   grid-template-columns: auto auto;
   line-height: 1.4em;
 }
@@ -1187,7 +1187,7 @@ div.sheet-meleewend span{
 }
 
 .sheet-rolltemplate-necShield .sheet-content .sheet-key {
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
@@ -1195,7 +1195,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necShield .sheet-content :nth-child(4n+3),
 .sheet-rolltemplate-necShield .sheet-content :nth-child(4n) {
-  background: #333333;
+  background: #D7D3C6;
 }
 
 .sheet-rolltemplate-necShield .sheet-desc {
@@ -1212,7 +1212,7 @@ div.sheet-meleewend span{
   margin-left: -7px;
 }
 .sheet-rolltemplate-necGeneric .sheet-container {
-  border: 3px solid lime;
+  border: 3px solid black;
   border-radius: 3px;
 }
 
@@ -1221,7 +1221,7 @@ div.sheet-meleewend span{
   color: var(--header-text-color);
   text-align: left;
   text-transform: capitalize;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   padding: 5px;
   border-bottom: 2px solid black;
 }
@@ -1229,7 +1229,7 @@ div.sheet-meleewend span{
 .sheet-rolltemplate-necGeneric .sheet-title {
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necGeneric .sheet-title img.sheet-phoenix {
@@ -1245,14 +1245,14 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necGeneric .sheet-subtitle {
   font-size: 0.9em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necGeneric .sheet-container {
-  --header-bg-color: #333333;
+  --header-bg-color: #D7D3C6;
   --header-text-color: #00FF00;
 }
-.sheet-rolltemplate-necGeneric .sheet-container.sheet-color-lime {
+.sheet-rolltemplate-necGeneric .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
   --header-text-color: #000000;
 }
@@ -1269,8 +1269,8 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necGeneric .sheet-content {
   display: grid;
-  background: #000000;
-  color: lime;
+  background: #E3DAC9;
+  color: black;
   grid-template-columns: auto auto;
   line-height: 1.4em;
 }
@@ -1280,7 +1280,7 @@ div.sheet-meleewend span{
 }
 
 .sheet-rolltemplate-necGeneric .sheet-content .sheet-key {
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
@@ -1288,7 +1288,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necGeneric .sheet-content :nth-child(4n+3),
 .sheet-rolltemplate-necGeneric .sheet-content :nth-child(4n) {
-  background: #333333;
+  background: #D7D3C6;
 }
 
 .sheet-rolltemplate-necGeneric .sheet-desc {
@@ -1306,7 +1306,7 @@ div.sheet-meleewend span{
   margin-left: -7px;
 }
 .sheet-rolltemplate-necWound .sheet-container {
-  border: 3px solid lime;
+  border: 3px solid black;
   border-radius: 3px;
 }
 
@@ -1322,7 +1322,7 @@ div.sheet-meleewend span{
 .sheet-rolltemplate-necWound .sheet-title {
   font-size: 1.2em;
   font-weight: bold;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necWound .sheet-title img.sheet-phoenix {
@@ -1338,14 +1338,14 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necWound .sheet-subtitle {
   font-size: 0.9em;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necWound .sheet-container {
-  --header-bg-color: #333333;
+  --header-bg-color: #D7D3C6;
   --header-text-color: #00FF00;
 }
-.sheet-rolltemplate-necWound .sheet-container.sheet-color-lime {
+.sheet-rolltemplate-necWound .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
   --header-text-color: #000000;
 }
@@ -1362,8 +1362,8 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necWound .sheet-content {
   display: grid;
-  background: #000000;
-  color: lime;
+  background: #E3DAC9;
+  color: black;
   grid-template-columns: auto auto;
   line-height: 1.4em;
 }
@@ -1376,19 +1376,19 @@ div.sheet-meleewend span{
   font-weight: bold;
   padding-right: 10px;
   text-align: right;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 .sheet-rolltemplate-necWound .sheet-content :nth-child(4n+3),
 .sheet-rolltemplate-necWound .sheet-content :nth-child(4n) {
-  background: #333333;
+  background: #D7D3C6;
 }
 
 .sheet-rolltemplate-necWound .sheet-desc {
   grid-column: span 2;
   padding: 5px;
   text-align: center;
-  font-family: 'Courier New', monospace;
+  font-family: 'Times New Roman', monospace;
 }
 
 
