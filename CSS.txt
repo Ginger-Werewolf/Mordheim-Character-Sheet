@@ -966,7 +966,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necMelee .sheet-container {
   --header-bg-color: #D7D3C6;
-  --header-text-color: #00FF00;
+  --header-text-color: #000000;
 }
 .sheet-rolltemplate-necMelee .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
@@ -1064,7 +1064,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necRanged .sheet-container {
   --header-bg-color: #D7D3C6;
-  --header-text-color: #00FF00;
+  --header-text-color: #000000;
 }
 .sheet-rolltemplate-necRanged .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
@@ -1157,7 +1157,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necShield .sheet-container {
   --header-bg-color: #D7D3C6;
-  --header-text-color: #00FF00;
+  --header-text-color: #000000;
 }
 .sheet-rolltemplate-necShield .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
@@ -1250,7 +1250,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necGeneric .sheet-container {
   --header-bg-color: #D7D3C6;
-  --header-text-color: #00FF00;
+  --header-text-color: #000000;
 }
 .sheet-rolltemplate-necGeneric .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
@@ -1343,7 +1343,7 @@ div.sheet-meleewend span{
 
 .sheet-rolltemplate-necWound .sheet-container {
   --header-bg-color: #D7D3C6;
-  --header-text-color: #00FF00;
+  --header-text-color: #000000;
 }
 .sheet-rolltemplate-necWound .sheet-container.sheet-color-black {
   --header-bg-color: #00FF00;
