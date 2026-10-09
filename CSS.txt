@@ -560,7 +560,7 @@ div.sheet-name div.sheet-section-small{
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
-  width: 300px;
+  width: 320px;
 }
 
 div.sheet-name label{
@@ -590,6 +590,8 @@ div.sheet-name input[type="number"] {
   font-size: 20px;
   font-weight: 600;
   font-family: 'Times New Roman', monospace;
+  text-align: right;
+  padding: 0px 25px 0px 0;
 }
 
 
