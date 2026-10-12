@@ -27,14 +27,14 @@
     </div>
       
     <div class="stat-block flex-center">
-      <label>WS: &#43;</label>
+      <label>WS:</label>
       <input name="attr_WS" type="number" value="">
       <input name="attr_WS_bonus" type="number" value="0">
       <!-- <button name="roll_BS" type="roll" value="&{template:default} {{name=@{character_name}'s Melee To Hit}} {{Result=[[d6+?{Modifier|0}>@{WS}+@{WS_bonus}]]}}"></button> -->
     </div>
 
     <div class="stat-block flex-center">
-      <label>BS: &#43;</label>
+      <label>BS:</label>
       <input name="attr_BS" type="number" value="0">
       <input name="attr_BS_bonus" type="number" value="0">
       <!-- <button name="roll_BS" type="roll" value="&{template:default} {{name=@{character_name}'s Ballistic To Hit}} {{Result=[[d6>@{BS}+@{BS_bonus}]]}}"></button> -->
@@ -44,21 +44,36 @@
       <label>S:</label>
       <input name="attr_S" type="number" value="0">
       <input name="attr_S_bonus" type="number" value="0">
-      <button name="roll_S" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling under or equal to their Strength of [[@{S} + @{S_bonus} ]] }} {{Roll = [[1D6]] }}  "></button>
+      <!-- <button name="roll_S" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under to their Strength of [[@{S} + @{S_bonus} ]] }} {{Roll = [[1D6]]<[[@{S}]] }}  "></button> -->
+      <button name="roll_S" type="roll"
+      value="&{template:necGeneric} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under their Strength of [[@{S}]]}} {{Roll=[[1d6cs&lt;[[@{S}]]cf&gt;[[@{S}+1]]]]}}">
+      </button>
     </div>
 
     <div class="stat-block flex-center">
       <label>T:</label>
       <input name="attr_T" type="number" value="0">
       <input name="attr_T_Bonus" type="number" value="0">
-      <button name="roll_T" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling under or equal to their Toughness of [[@{T} + @{T_bonus} ]] }} {{Roll = [[1D6]] }}  "></button> 
+      <!-- <button name="roll_T" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under to their Toughness of [[@{T} + @{T_bonus} ]] }} {{Roll = [[1D6]] }}  "></button> -->
+      <button name="roll_T" type="roll"
+      value="&{template:necGeneric} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under their Toughness of [[@{T}]]}} {{Roll=[[1d6cs&lt;[[@{T}]]cf&gt;[[@{T}+1]]]]}}">
+      </button>
+    </div>
+   
+    <div class="stat-block flex-center">
+      <label>W:</label>
+      <input name="attr_Wounds_max" type="number" value="0">
+      <!-- <input name="attr_A_bonus" type="number" value="0"> -->
     </div>
     
     <div class="stat-block flex-center">
-      <label>I: &#43;</label>
+      <label>I:</label>
       <input name="attr_I" type="number" value="">
       <input name="attr_I_bonus" type="number" value="">
-      <button name="roll_I" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Initiative Test}} {{subtitle=Rolling equal to or over their Initiative of [[@{I} + @{I_bonus} ]] on 1D6}} {{Roll = [[1D6]] }} "></button>
+    <!--  <button name="roll_I" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I} + @{I_bonus} ]] on 1D6}} {{Roll = [[1D6]] }} "></button> -->
+      <button name="roll_I" type="roll"
+      value="&{template:necGeneric} {{title=@{character_name}'s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I}]]}} {{Roll=[[1d6cs&lt;[[@{I}]]cf&gt;[[@{I}+1]]]]}}">
+      </button>
     </div>
    
     <div class="stat-block flex-center">
@@ -68,32 +83,15 @@
     </div>
 
     <div class="stat-block flex-center">
-      <label>Ld: &#43;</label>
+      <label>Ld:</label>
       <input name="attr_LD" type="number" value="0">
       <input name="attr_LD_bonus" type="number" value="0">
-      <button name="roll_BS" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Leadership Test}} {{subtitle=Rolling equal to or over their Leadership of [[@{LD} + @{LD_bonus} ]] on 2D6}} {{Roll = [[2D6]] }}"></button>
+      <button name="roll_LD" type="roll"
+        value="&{template:necGeneric} {{title=@{character_name}'s Leadership Test}} {{subtitle=Rolling equal to or under their Leadership of [[@{LD}]]}} {{Roll=[[2d6cs<[[ @{LD} ]]cf>[[ @{LD}+1 ]] ]]}}">
+      </button>
+      <!-- <button name="roll_BS" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Leadership Test}} {{subtitle=Rolling equal to or over their Leadership of [[@{LD} + @{LD_bonus} ]] on 2D6}} {{Roll = [[2D6]] }}"></button> -->
     </div>
      
-    <div class="stat-block flex-center">
-      <label>Cl: &#43;</label>
-      <input name="attr_CL" type="number" value="0">
-      <input name="attr_CL_bonus" type="number" value="0">
-      <button name="roll_CL" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Cool Test}} {{subtitle=Rolling equal to or over their Cool of [[@{CL} + @{CL_bonus} ]] on 2D6}} {{Roll = [[2D6]] }}"></button> 
-    </div>
-    
-    <div class="stat-block flex-center">
-      <label>Wil: &#43;</label>
-      <input name="attr_Will" type="number" value="1">
-      <input name="attr_Will_bonus" type="number" value="0">
-      <button name="roll_Will" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Willpower Test}} {{subtitle=Rolling equal to or over their Willpower of [[@{Will} + @{Will_bonus} ]] on 2D6}} {{Roll = [[2D6]] }}"></button>
-    </div>
-
-    <div class="stat-block flex-center">
-      <label>Int: &#43;</label>
-      <input name="attr_Int" type="number" value="1">
-      <input name="attr_Int_bonus" type="number" value="0">
-      <button name="roll_Int" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Intelligence Test}} {{subtitle=Rolling equal to or over their Intelligence of [[@{Int} + @{Int_bonus} ]] on 2D6}} {{Roll = [[2D6]] }}"></button>
-    </div>    
     
   </div>
  <!-- 
@@ -167,13 +165,9 @@
     <div class="type-block flex-right">
       <input name="attr_Ganger_Type" type="text">    
       <select name="attr_Category">
-        <option value="Leader">Leader</option>
-        <option value="Champion">Champion</option>
-        <option value="Prospect">Prospect</option>
-        <option value="Ganger" selected="selected">Ganger</option>
-        <option value="Juve">Juve</option>
-        <option value="Crew">Crew</option>
-        <option value="Exotic Beast">Exotic Beast</option>
+        <option value="Hero">Hero</option>
+        <option value="Henchman">Henchman</option>
+        <option value="Hired-Sword">Hired-Sword</option>
       </select> 
       <!-- <label>GANGERTYPE</label> -->
     </div>
