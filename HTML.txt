@@ -129,7 +129,7 @@
     <div class="wound-block flex-center">
       <label>Starting Wounds:</label>
       <input name="attr_Wounds_max" type="number" value="1">
-      <label>Current Wounds:</label>
+      <label>Wounds Remaining:</label>
       <input name="attr_Wounds" type="number" value="1">
     </div>
   </div>  
@@ -494,7 +494,7 @@
 <rolltemplate class="sheet-rolltemplate-necGeneric">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/K7Jd5kc.png" alt="Necromunda"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Back-necGeneric.png" alt="Necromunda"> </div>{{/title}}
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
     </div>
     <div class="sheet-content">

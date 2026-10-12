@@ -374,12 +374,12 @@ div.sheet-wounds{
 }
 
 div.sheet-wounds div.sheet-wound-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iivdVOC.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WoundsBloodBorder.png);
     /* DONE Boarder No3 */
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
-  width: 300px;
+  width: 320px;
 }
 
 div.sheet-wounds div.sheet-wound-block label{
@@ -516,7 +516,7 @@ div.sheet-GoldLevel{
 }
 
 div.sheet-GoldLevel div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iivdVOC.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Wounds-Border.png);
     /* DONE Boarder No3 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -1239,7 +1239,7 @@ div.sheet-meleewend span{
 }
 .sheet-rolltemplate-necGeneric .sheet-title img.sheet-NecroLogo {
   width: 298px;
-  height: 66px;
+  height: 33px;
   float: middle;
 }
 
