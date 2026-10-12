@@ -185,6 +185,12 @@ div.sheet-main {
                       ".          stats      treasure"
                       ".          stats      treasure"
                       ".          stend      ."
+                      ".          meleewbeg  meleewbeg"
+                      ".          meleew     meleew"
+                      ".          meleew     meleew"
+                      ".          meleew     meleew"
+                      ".          meleewend  meleewend"
+                      ".          .          ."
                       ".          weaponsbeg weaponsbeg"
                       ".          weapons    weapons"
                       ".          weapons    weapons"
@@ -194,12 +200,6 @@ div.sheet-main {
                       ".          weapons    weapons"
                       ".          weapons    weapons"
                       ".          weaponsend weaponsend"
-                      ".          .          ."
-                      ".          meleewbeg  meleewbeg"
-                      ".          meleew     meleew"
-                      ".          meleew     meleew"
-                      ".          meleew     meleew"
-                      ".          meleewend  meleewend"
                       ".          .          ."
                       ".          notessect  notessect"
                       ".          notessect  notessect"
@@ -463,11 +463,10 @@ div.sheet-GangerType{
 
 div.sheet-GangerType div.sheet-type-block{
   background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/jkJjXtv.png);
-    /* DONE Boarder Credits old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iivdVOC.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
-  width: 300px;
+  width: 320px;
   text-align: center;
   align-items: center;
 }
@@ -522,7 +521,7 @@ div.sheet-GoldLevel div.sheet-stat-block{
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
-  width: 300px;
+  width: 320px;
 }
 
 div.sheet-GoldLevel div.sheet-stat-block label{
