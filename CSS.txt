@@ -169,47 +169,48 @@ so that they can be positioned in the grid easily,
  
 div.sheet-main {
   display: grid;
-  grid-template-columns: 150px 3.5fr 3.5fr;
+  grid-template-columns: 170px 3.5fr 3.5fr;
   grid-template-rows: 10px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
   grid-template-areas:".          .          ."
-                      ".          logo       name"
-                      "stbeg      logo       name"
-                      "stats      GangerType wounds"
-                      "stats      GangerType wounds"
-                      "stats      .          armour"
-                      "stats      .          armour"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
+                      ".          logo       treasure"
+                      "stbeg      logo       treasure"
+                      "stats      name       treasure"
+                      "stats      name       treasure"
+                      "stats      GangerType treasure"
+                      "stats      GangerType treasure"
+                      "stats      wounds     treasure"
+                      "stats      wounds     treasure"
+                      "stats      armour     treasure"
+                      "stats      armour     treasure"
                       "stats      .          treasure"
                       "stats      .          treasure"
                       "stats      .          treasure"
                       "stend      .          ."
-                      ".          meleewbeg  meleewbeg"
-                      ".          meleew     meleew"
-                      ".          meleew     meleew"
-                      ".          meleew     meleew"
-                      ".          meleewend  meleewend"
+                      "meleewbeg  meleewbeg  meleewbeg"
+                      "meleew     meleew     meleew"
+                      "meleew     meleew     meleew"
+                      "meleew     meleew     meleew"
+                      "meleewend  meleewend  meleewend"
                       ".          .          ."
-                      ".          weaponsbeg weaponsbeg"
-                      ".          weapons    weapons"
-                      ".          weapons    weapons"
-                      ".          weapons    weapons"
-                      ".          weapons    weapons"
-                      ".          weapons    weapons"
-                      ".          weapons    weapons"
-                      ".          weapons    weapons"
-                      ".          weaponsend weaponsend"
+                      "weaponsbeg weaponsbeg weaponsbeg"
+                      "weapons    weapons    weapons"
+                      "weapons    weapons    weapons"
+                      "weapons    weapons    weapons"
+                      "weapons    weapons    weapons"
+                      "weapons    weapons    weapons"
+                      "weapons    weapons    weapons"
+                      "weapons    weapons    weapons"
+                      "weaponsend weaponsend weaponsend"
                       ".          .          ."
-                      ".          notessect  notessect"
-                      ".          notessect  notessect"
-                      ".          notessect  notessect"
-                      ".          notessect  notessect"
-                      ".          notessect  notessect";
+                      "notessect  notessect  notessect"
+                      "notessect  notessect  notessect"
+                      "notessect  notessect  notessect"
+                      "notessect  notessect  notessect"
+                      "notessect  notessect  notessect";
 
 
-  grid-gap: 0px;
+  column-gap: 10px;
+  row-gap: 0px;
   width:    846px; /* Defines the width and height of the sheet */
   height:   1650px;
   background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/IOFefj6.jpeg);
@@ -413,7 +414,7 @@ div.sheet-armour{
 }
 
 div.sheet-armour div.sheet-armour-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-SaveType.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-Save-Type.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -602,7 +603,7 @@ div.sheet-name input[type="number"] {
 
 div.sheet-treasure{
   grid-area: treasure;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/8BX8WVX.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Special-Rules.png);
   /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ouwuMnb.png*/
   background-repeat: no-repeat;
   background-size: contain;
