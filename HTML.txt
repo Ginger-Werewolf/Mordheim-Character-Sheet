@@ -185,11 +185,103 @@
     <textarea name="attr_treasure" placeholder="Notes"></textarea>
   </div>
 
-<!-- Notes SECTION -->
-  <div class="notessect section flex-center flex-top flex-down">
-    <label></label>
-    <textarea name="attr_notessect" placeholder="Notes"></textarea>
+<!-- Notes SECTION - EXPERIENCE TRACKER -->
+<div class="notessect section flex-center flex-top flex-down">
+  <label>Experience</label>    
+  <div class="sheet-notessect-xp">
+  <input type="checkbox" name="attr_xp_01" value="1">
+  <input type="checkbox" name="attr_xp_02" value="1">
+  <input type="checkbox" name="attr_xp_03" value="1">
+  <input type="checkbox" name="attr_xp_04" value="1">
+  <input type="checkbox" name="attr_xp_05" value="1">
+  <input type="checkbox" name="attr_xp_06" value="1">
+  <input type="checkbox" name="attr_xp_07" value="1">
+  <input type="checkbox" name="attr_xp_08" value="1">
+  <input type="checkbox" name="attr_xp_09" value="1">
+  <input type="checkbox" name="attr_xp_10" value="1">
+  <input type="checkbox" name="attr_xp_11" value="1">
+  <input type="checkbox" name="attr_xp_12" value="1">
+  <input type="checkbox" name="attr_xp_13" value="1">
+  <input type="checkbox" name="attr_xp_14" value="1">
+  <input type="checkbox" name="attr_xp_15" value="1">
+  <input type="checkbox" name="attr_xp_16" value="1">
+  <input type="checkbox" name="attr_xp_17" value="1">
+  <input type="checkbox" name="attr_xp_18" value="1">
+  <input type="checkbox" name="attr_xp_19" value="1">
+  <input type="checkbox" name="attr_xp_20" value="1">
+  <input type="checkbox" name="attr_xp_21" value="1">
+  <input type="checkbox" name="attr_xp_22" value="1">
+  <input type="checkbox" name="attr_xp_23" value="1">
+  <input type="checkbox" name="attr_xp_24" value="1">
+  <input type="checkbox" name="attr_xp_25" value="1">
+  <input type="checkbox" name="attr_xp_26" value="1">
+  <input type="checkbox" name="attr_xp_27" value="1">
+  <input type="checkbox" name="attr_xp_28" value="1">
+  <input type="checkbox" name="attr_xp_29" value="1">
+  <input type="checkbox" name="attr_xp_30" value="1">
+  <input type="checkbox" name="attr_xp_31" value="1">
+  <input type="checkbox" name="attr_xp_32" value="1">
+  <input type="checkbox" name="attr_xp_33" value="1">
+  <input type="checkbox" name="attr_xp_34" value="1">
+  <input type="checkbox" name="attr_xp_35" value="1">
+  <input type="checkbox" name="attr_xp_36" value="1">
+  <input type="checkbox" name="attr_xp_37" value="1">
+  <input type="checkbox" name="attr_xp_38" value="1">
+  <input type="checkbox" name="attr_xp_39" value="1">
+  <input type="checkbox" name="attr_xp_40" value="1">
+  <input type="checkbox" name="attr_xp_41" value="1">
+  <input type="checkbox" name="attr_xp_42" value="1">
+  <input type="checkbox" name="attr_xp_43" value="1">
+  <input type="checkbox" name="attr_xp_44" value="1">
+  <input type="checkbox" name="attr_xp_45" value="1">
+  <input type="checkbox" name="attr_xp_46" value="1">
+  <input type="checkbox" name="attr_xp_47" value="1">
+  <input type="checkbox" name="attr_xp_48" value="1">
+  <input type="checkbox" name="attr_xp_49" value="1">
+  <input type="checkbox" name="attr_xp_50" value="1">
+  <input type="checkbox" name="attr_xp_51" value="1">
+  <input type="checkbox" name="attr_xp_52" value="1">
+  <input type="checkbox" name="attr_xp_53" value="1">
+  <input type="checkbox" name="attr_xp_54" value="1">
+  <input type="checkbox" name="attr_xp_55" value="1">
+  <input type="checkbox" name="attr_xp_56" value="1">
+  <input type="checkbox" name="attr_xp_57" value="1">
+  <input type="checkbox" name="attr_xp_58" value="1">
+  <input type="checkbox" name="attr_xp_59" value="1">
+  <input type="checkbox" name="attr_xp_60" value="1">
+  <input type="checkbox" name="attr_xp_61" value="1">
+  <input type="checkbox" name="attr_xp_62" value="1">
+  <input type="checkbox" name="attr_xp_63" value="1">
+  <input type="checkbox" name="attr_xp_64" value="1">
+  <input type="checkbox" name="attr_xp_65" value="1">
+  <input type="checkbox" name="attr_xp_66" value="1">
+  <input type="checkbox" name="attr_xp_67" value="1">
+  <input type="checkbox" name="attr_xp_68" value="1">
+  <input type="checkbox" name="attr_xp_69" value="1">
+  <input type="checkbox" name="attr_xp_70" value="1">
+  <input type="checkbox" name="attr_xp_71" value="1">
+  <input type="checkbox" name="attr_xp_72" value="1">
+  <input type="checkbox" name="attr_xp_73" value="1">
+  <input type="checkbox" name="attr_xp_74" value="1">
+  <input type="checkbox" name="attr_xp_75" value="1">
+  <input type="checkbox" name="attr_xp_76" value="1">
+  <input type="checkbox" name="attr_xp_77" value="1">
+  <input type="checkbox" name="attr_xp_78" value="1">
+  <input type="checkbox" name="attr_xp_79" value="1">
+  <input type="checkbox" name="attr_xp_80" value="1">
+  <input type="checkbox" name="attr_xp_81" value="1">
+  <input type="checkbox" name="attr_xp_82" value="1">
+  <input type="checkbox" name="attr_xp_83" value="1">
+  <input type="checkbox" name="attr_xp_84" value="1">
+  <input type="checkbox" name="attr_xp_85" value="1">
+  <input type="checkbox" name="attr_xp_86" value="1">
+  <input type="checkbox" name="attr_xp_87" value="1">
+  <input type="checkbox" name="attr_xp_88" value="1">
+  <input type="checkbox" name="attr_xp_89" value="1">
+  <input type="checkbox" name="attr_xp_90" value="1">
   </div>
+</div>
+
 
 
 <!-- MAIN WEAPON SECTION -->
@@ -525,38 +617,69 @@ https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/
 </rolltemplate>
 -->
 
-<!-- ---------------------------SHEET WORKERS----------------- 
+<!-- ---------------------------SHEET WORKERS-----------------  -->
 
 <script type="text/worker">
 
-const int = score => parseInt(score, 10) || 0;
+<script type="text/worker">
 
-// Auto-calculates & updates 'Stat Bonus' based on changes to corresponding 'Base Stat',
-// according to the table on page 5 of the Rulebook.
-// If the Base stat is less than 1, the sheet sets the bonus to "-2"
+  // Your Experience tracker code goes here
+  
+(function () {
+  function xpAttribute(number) {
+    return "xp_" + String(number).padStart(2, "0");
+  }
 
-const stats = ["strength", "intelligence", "charm", "arcana", "grace"];
-stats.forEach(stat => {
-    on(`change:${stat}`, () => {
-        getAttrs([stat], values => {
-            const stat_base = int(values[stat]);
-            console.log(stat_base);
-            let stat_bonus = 0;
-            if (stat_base >= 17) stat_bonus = "+4";
-            else if (stat_base >= 16) stat_bonus = "+3";
-            else if (stat_base >= 13) stat_bonus = "+2";
-            else if (stat_base >= 9) stat_bonus = "+1";
-            else if (stat_base >= 7) stat_bonus = "0";
-            else if (stat_base >= 5) stat_bonus = "-1";
-            else if (stat_base >= 1) stat_bonus = "-2";
-            else stat_bonus = "-2";
-            
-            setAttrs({
-                [`${stat}_bonus`]: stat_bonus
-            });
-        });
+  function handleXPChange(changedNumber, eventInfo) {
+    // Ignore changes made by this worker.
+    if (eventInfo.sourceType === "sheetworker") {
+      return;
+    }
+
+    var attributes = [];
+
+    for (var i = 1; i <= 90; i++) {
+      attributes.push(xpAttribute(i));
+    }
+
+    getAttrs(attributes, function (values) {
+      var updates = {};
+      var changedValue = values[xpAttribute(changedNumber)];
+
+      if (changedValue === "1") {
+        // Check that every earlier box is ticked.
+        for (var i = 1; i < changedNumber; i++) {
+          if (values[xpAttribute(i)] !== "1") {
+            updates[xpAttribute(changedNumber)] = "0";
+            break;
+          }
+        }
+      } else {
+        // Unticking a box clears every later box.
+        for (var i = changedNumber + 1; i <= 90; i++) {
+          if (values[xpAttribute(i)] === "1") {
+            updates[xpAttribute(i)] = "0";
+          }
+        }
+      }
+
+      if (Object.keys(updates).length > 0) {
+        setAttrs(updates);
+      }
     });
-});
+  }
 
-</script> -->
+  // Watch all 90 Experience boxes.
+  for (var i = 1; i <= 90; i++) {
+    (function (number) {
+      on("change:" + xpAttribute(number), function (eventInfo) {
+        handleXPChange(number, eventInfo);
+      });
+    })(i);
+  }
+})();
+
+
+</script>
+
 

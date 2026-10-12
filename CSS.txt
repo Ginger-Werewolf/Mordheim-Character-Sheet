@@ -620,29 +620,70 @@ div.sheet-treasure textarea{
   margin-top: 10px;
   margin-left: 14px;
 }
-/* ------------------------------------------------------------ */
-/* notessect SECTION This is the notes section at the bottom  */
 
-div.sheet-notessect{
+/* notessect SECTION - Experience tracker */
+
+div.sheet-notessect {
   grid-area: notessect;
   margin-left: 15px;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/CzjuDym.png);
-  /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ouwuMnb.png*/
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Experience.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 228px;
   width: 650px;
 }
 
-div.sheet-notessect label{
+div.sheet-notessect label {
   margin-top: 1px;
 }
 
-div.sheet-notessect textarea{
-  height: 60%;
+/* Experience boxes: 30 columns x 3 rows */
+
+div.sheet-notessect-xp {
+  display: grid;
+  grid-template-columns: repeat(30, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 2px;
+  width: 620px;
   margin-top: 10px;
   margin-left: 14px;
 }
+
+div.sheet-notessect-xp input[type="checkbox"] {
+  margin: 0;
+  justify-self: center;
+  align-self: center;
+  width: 12px;
+  height: 12px;
+  accent-color: black;
+}
+
+/* Emphasise appropriate Experience box */
+
+div.sheet-notessect-xp input[name="attr_xp_02"],
+div.sheet-notessect-xp input[name="attr_xp_04"],
+div.sheet-notessect-xp input[name="attr_xp_06"],
+div.sheet-notessect-xp input[name="attr_xp_08"],
+div.sheet-notessect-xp input[name="attr_xp_11"],
+div.sheet-notessect-xp input[name="attr_xp_14"],
+div.sheet-notessect-xp input[name="attr_xp_17"],
+div.sheet-notessect-xp input[name="attr_xp_20"],
+div.sheet-notessect-xp input[name="attr_xp_24"],
+div.sheet-notessect-xp input[name="attr_xp_28"],
+div.sheet-notessect-xp input[name="attr_xp_32"],
+div.sheet-notessect-xp input[name="attr_xp_36"],
+div.sheet-notessect-xp input[name="attr_xp_41"],
+div.sheet-notessect-xp input[name="attr_xp_46"],
+div.sheet-notessect-xp input[name="attr_xp_51"],
+div.sheet-notessect-xp input[name="attr_xp_57"],
+div.sheet-notessect-xp input[name="attr_xp_63"],
+div.sheet-notessect-xp input[name="attr_xp_69"],
+div.sheet-notessect-xp input[name="attr_xp_76"],
+div.sheet-notessect-xp input[name="attr_xp_83"],
+div.sheet-notessect-xp input[name="attr_xp_90"] {
+  outline: 2px solid black;
+}
+
 /* ------------------------------------------------------------ */
 /* Weapons Begin SECTION */
 
