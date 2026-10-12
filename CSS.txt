@@ -410,18 +410,18 @@ div.sheet-armour{
 }
 
 div.sheet-armour div.sheet-armour-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/bCU0AtO.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ArmourSaveType.png);
    /* DONE Boarder No4 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/1LJNpFI.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
-  width: 300px;
+  width: 320px;
 }
 
 div.sheet-armour div.sheet-armour-block label{
   width: 20px;
   padding-left: 10px;
-  font-size: 0.8em
+  font-size: 1em
   color: black;
 }
 
@@ -443,7 +443,7 @@ div.sheet-armour div.sheet-armour-block select{
   font-family: 'Times New Roman', monospace;display: block;
   margin: 0 auto;
   width: 100px;
-  padding: 10px 10px;
+  padding: 2px 4px;
   border: none;
   border-radius: 5px;
   background-color: #E3DAC9;
