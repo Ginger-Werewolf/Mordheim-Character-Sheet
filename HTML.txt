@@ -11,39 +11,40 @@
   <div class="stbeg section">
           
     <div class="stat-block flex-center">
-      <label>Characteristic</label>
-      <label>Base</label>
-      <label>Mod&pm;</label>
-      <label>Test</label>
+      <label>Char</label>
+      <label>Val</label>
+      <label>Roll</label>
     </div>
   </div>
 
   <div class="stats section">
     
     <div class="stat-block flex-center">
-      <label>M: &#34;</label>
+      <label>M</label>
       <input name="attr_M" type="number" value="0">
-      <input name="attr_M_max" type="number" value="0">
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
     </div>
       
     <div class="stat-block flex-center">
-      <label>WS:</label>
+      <label>WS</label>
       <input name="attr_WS" type="number" value="">
-      <input name="attr_WS_bonus" type="number" value="0">
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
+      <!-- <input name="attr_WS_bonus" type="number" value="0"> -->
       <!-- <button name="roll_BS" type="roll" value="&{template:default} {{name=@{character_name}'s Melee To Hit}} {{Result=[[d6+?{Modifier|0}>@{WS}+@{WS_bonus}]]}}"></button> -->
     </div>
 
     <div class="stat-block flex-center">
-      <label>BS:</label>
+      <label>BS</label>
       <input name="attr_BS" type="number" value="0">
-      <input name="attr_BS_bonus" type="number" value="0">
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
+      <!-- <input name="attr_BS_bonus" type="number" value="0"> -->
       <!-- <button name="roll_BS" type="roll" value="&{template:default} {{name=@{character_name}'s Ballistic To Hit}} {{Result=[[d6>@{BS}+@{BS_bonus}]]}}"></button> -->
     </div>
 
     <div class="stat-block flex-center">
-      <label>S:</label>
+      <label>S</label>
       <input name="attr_S" type="number" value="0">
-      <input name="attr_S_bonus" type="number" value="0">
+      <!-- <input name="attr_S_bonus" type="number" value="0"> -->
       <!-- <button name="roll_S" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under to their Strength of [[@{S} + @{S_bonus} ]] }} {{Roll = [[1D6]]<[[@{S}]] }}  "></button> -->
       <button name="roll_S" type="roll"
       value="&{template:necGeneric} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under their Strength of [[@{S}]]}} {{Roll=[[1d6cs&lt;[[@{S}]]cf&gt;[[@{S}+1]]]]}}">
@@ -51,9 +52,9 @@
     </div>
 
     <div class="stat-block flex-center">
-      <label>T:</label>
+      <label>T</label>
       <input name="attr_T" type="number" value="0">
-      <input name="attr_T_Bonus" type="number" value="0">
+      <!-- <input name="attr_T_Bonus" type="number" value="0"> -->
       <!-- <button name="roll_T" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under to their Toughness of [[@{T} + @{T_bonus} ]] }} {{Roll = [[1D6]] }}  "></button> -->
       <button name="roll_T" type="roll"
       value="&{template:necGeneric} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under their Toughness of [[@{T}]]}} {{Roll=[[1d6cs&lt;[[@{T}]]cf&gt;[[@{T}+1]]]]}}">
@@ -61,31 +62,33 @@
     </div>
    
     <div class="stat-block flex-center">
-      <label>W:</label>
+      <label>W</label>
       <input name="attr_Wounds_max" type="number" value="0">
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
       <!-- <input name="attr_A_bonus" type="number" value="0"> -->
     </div>
     
     <div class="stat-block flex-center">
-      <label>I:</label>
+      <label>I</label>
       <input name="attr_I" type="number" value="">
-      <input name="attr_I_bonus" type="number" value="">
-    <!--  <button name="roll_I" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I} + @{I_bonus} ]] on 1D6}} {{Roll = [[1D6]] }} "></button> -->
+      <!-- <input name="attr_I_bonus" type="number" value=""> -->
+      <!--  <button name="roll_I" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I} + @{I_bonus} ]] on 1D6}} {{Roll = [[1D6]] }} "></button> -->
       <button name="roll_I" type="roll"
       value="&{template:necGeneric} {{title=@{character_name}'s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I}]]}} {{Roll=[[1d6cs&lt;[[@{I}]]cf&gt;[[@{I}+1]]]]}}">
       </button>
     </div>
    
     <div class="stat-block flex-center">
-      <label>A:</label>
+      <label>A</label>
       <input name="attr_A" type="number" value="0">
-      <input name="attr_A_bonus" type="number" value="0">
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
+      <!-- <input name="attr_A_bonus" type="number" value="0"> -->
     </div>
 
     <div class="stat-block flex-center">
-      <label>Ld:</label>
+      <label>Ld</label>
       <input name="attr_LD" type="number" value="0">
-      <input name="attr_LD_bonus" type="number" value="0">
+      <!-- <input name="attr_LD_bonus" type="number" value="0"> -->
       <button name="roll_LD" type="roll"
         value="&{template:necGeneric} {{title=@{character_name}'s Leadership Test}} {{subtitle=Rolling equal to or under their Leadership of [[@{LD}]]}} {{Roll=[[2d6cs<[[ @{LD} ]]cf>[[ @{LD}+1 ]] ]]}}">
       </button>
@@ -137,24 +140,16 @@
  <!-- Armour SECTION -->
   <div class="armour section">
     <div class="armour-block flex-center">
-      <label>Save</label>
       <input name="attr_SaveThrow" type="number" value="">
+      <label> </label>
       <button name="roll_save" type="roll" value="&{template:necShield}} {{title=@{character_name}&#39;s armour }} {{subtitle= Using @{ArmourType}}} {{Armour Save= @{SaveThrow}+ }} {{Modifiers= ?{Save Modifiers|No,0|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5} }} {{Save Roll= [[1D6+?{Save Modifiers|No,0|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]}} }}"></button>
       <select name="attr_ArmourType">
         <option value="None" selected="selected">None</option>
-        <option value="Ablative Overlay">Ablative Overlay</option>
-        <option value="Archaeo-Carapace">Archaeo-Carapace</option>
-        <option value="Armourweave">Armourweave</option>
-        <option value="Carapace">Carapace</option>
-        <option value="Ceramite Shield">Ceramite Shield</option>
-        <option value="Flak">Flak</option>
-        <option value="Gutterforged Cloak">Gutterforged Cloak</option>
-        <option value="Hazard Suit">Hazard Suit</option>
-        <option value="Mantle Malifica">Mantle Malifica</option>
-        <option value="Mesh Armour">Mesh Armour</option>
-        <option value="Reflec Shroud">Reflec Shroud</option>
-        <option value="Scrap Shield">Scrap Shield</option>
-        <option value="Natural Hide">Natural Hide</option>
+        <option value="Heavy Armour">Heavy Armour</option>
+        <option value="Heavy+Shield">Heavy+Shield</option>
+        <option value="Light Armour">Light Armour</option>
+        <option value="Light+Shield">Light+Shield</option>
+        <option value="Shield">Shield</option>
       </select>
     </div>
   </div
@@ -494,7 +489,7 @@
 <rolltemplate class="sheet-rolltemplate-necGeneric">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Back-necGeneric.png" alt="Necromunda"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Back-necGeneric.png" alt="Mordheim"> </div>{{/title}}
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
     </div>
     <div class="sheet-content">
@@ -511,8 +506,8 @@
 <rolltemplate class="sheet-rolltemplate-necShield">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/K7Jd5kc.png" alt="Necromunda"> </div>{{/title}}
-      {{#title}}<div class="sheet-title">{{title}}<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/T0KFI9q.png" alt="Shield"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ArmourSaveBanner.png" alt="Save"> </div>{{/title}}
+      <!-- {{#title}}<div class="sheet-title">{{title}}<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/T0KFI9q.png" alt="Shield"> </div>{{/title}} -->
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
     </div>
     <div class="sheet-content">

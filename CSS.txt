@@ -112,7 +112,7 @@ button[type="roll"]:not(.sheet-small){
   color: black;
   height: 20px;
   width: 20px;
-  margin-left: 15px;
+  margin-left: 0px;
 }
 
 button[type="roll"]:not(.sheet-small)::before{
@@ -169,22 +169,23 @@ so that they can be positioned in the grid easily,
  
 div.sheet-main {
   display: grid;
-  grid-template-columns: 55px 3.5fr 3.5fr;
-  grid-template-rows: 40px 85px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
+  grid-template-columns: 150px 3.5fr 3.5fr;
+  grid-template-rows: 10px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
   grid-template-areas:".          .          ."
                       ".          logo       name"
-                      ".          stbeg      GangerType"
-                      ".          stats      GangerType"
-                      ".          stats      wounds"
-                      ".          stats      wounds"
-                      ".          stats      armour"
-                      ".          stats      armour"
-                      ".          stats      treasure"
-                      ".          stats      treasure"
-                      ".          stats      treasure"
-                      ".          stats      treasure"
-                      ".          stats      treasure"
-                      ".          stend      ."
+                      "stbeg      logo       name"
+                      "stats      GangerType wounds"
+                      "stats      GangerType wounds"
+                      "stats      .          armour"
+                      "stats      .          armour"
+                      "stats      .          treasure"
+                      "stats      .          treasure"
+                      "stats      .          treasure"
+                      "stats      .          treasure"
+                      "stats      .          treasure"
+                      "stats      .          treasure"
+                      "stats      .          treasure"
+                      "stend      .          ."
                       ".          meleewbeg  meleewbeg"
                       ".          meleew     meleew"
                       ".          meleew     meleew"
@@ -258,30 +259,30 @@ div.sheet-stbeg div.sheet-stat-block{
   background-repeat: no-repeat;
   background-size: contain;
   height: 35px;
-  width: 300px;
+  width: 135px;
 }
 
 div.sheet-stbeg div.sheet-stat-block label{
-  width: 100px;
-  padding-left: 10px;
-  text-align: right;
+  width: 45px;
+  padding-left: 0px;
+  text-align: center;
   color: black;
 }
 
 div.sheet-stbeg input,
 div.sheet-stbeg span{
   height: 35px;
-  width: 60px;
+  width: 45px;
   font-size: 20px;
   font-weight: 600;
   color: black;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 div.sheet-stbeg span{
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 5px;
 }
 
 
@@ -294,39 +295,40 @@ div.sheet-stats{
 }
 
 div.sheet-stats div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BiJh8Wj.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/LineOnly.png);
   /* DONE Boarder No2 */
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 3px;
   height: 35px;
-  width: 300px;
+  width: 135px;
 }
 
 div.sheet-stats div.sheet-stat-block label{
-  width: 90px;
-  padding-left: 10px;
+  width: 45px;
+  padding-left: 0px;
+  text-align: center;
   color: black;
 }
 
 div.sheet-stats input,
 div.sheet-stats span{
   height: 35px;
-  width: 60px;
+  width: 45px;
   font-size: 20px;
   font-weight: 600;
   color: black;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 div.sheet-stats span{
   padding-top: 15px;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 /* ------------------------------------------------------------ */
-/* stend SECTION end of teh stats section */
+/* stend SECTION end of the stats section */
 
 div.sheet-stend{
   grid-area: stend;
@@ -340,29 +342,30 @@ div.sheet-stend div.sheet-stat-block{
   background-size: contain;
   margin-top: 15px;
   height: 70px;
-  width: 300px;
+  width: 135px;
 }
 
 div.sheet-stend div.sheet-stat-block label{
-  width: 90px;
-  padding-left: 10px;
+  width: 45px;
+  padding-left: 0px;
+  text-align: center;
   color: black;
 }
 
 div.sheet-stend input,
 div.sheet-stend span{
   height: 35px;
-  width: 60px;
+  width: 45px;
   font-size: 20px;
   font-weight: 600;
   color: black;
   text-align: center;
-  padding-left: 20px;
+  padding-left: 0px;
 }
 
 div.sheet-stend span{
   padding-top: 15px;
-  padding-left: 10px;
+  padding-left: 0px;
 }
 
 /* ------------------------------------------------------------ */
@@ -411,7 +414,6 @@ div.sheet-armour{
 
 div.sheet-armour div.sheet-armour-block{
   background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-SaveType.png);
-   /* DONE Boarder No4 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/1LJNpFI.png*/
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;

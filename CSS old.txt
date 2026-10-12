@@ -169,23 +169,22 @@ so that they can be positioned in the grid easily,
  
 div.sheet-main {
   display: grid;
-  grid-template-columns: 150px 3.5fr 3.5fr;
-  grid-template-rows: 10px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
+  grid-template-columns: 55px 3.5fr 3.5fr;
+  grid-template-rows: 40px 85px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 40px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px 38px;
   grid-template-areas:".          .          ."
                       ".          logo       name"
-                      "stbeg      logo       name"
-                      "stats      GangerType wounds"
-                      "stats      GangerType wounds"
-                      "stats      .          armour"
-                      "stats      .          armour"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stend      .          ."
+                      ".          stbeg      GangerType"
+                      ".          stats      GangerType"
+                      ".          stats      wounds"
+                      ".          stats      wounds"
+                      ".          stats      armour"
+                      ".          stats      armour"
+                      ".          stats      treasure"
+                      ".          stats      treasure"
+                      ".          stats      treasure"
+                      ".          stats      treasure"
+                      ".          stats      treasure"
+                      ".          stend      ."
                       ".          meleewbeg  meleewbeg"
                       ".          meleew     meleew"
                       ".          meleew     meleew"
@@ -259,30 +258,30 @@ div.sheet-stbeg div.sheet-stat-block{
   background-repeat: no-repeat;
   background-size: contain;
   height: 35px;
-  width: 135px;
+  width: 300px;
 }
 
 div.sheet-stbeg div.sheet-stat-block label{
-  width: 40px;
-  padding-left: 0px;
-  text-align: left;
+  width: 100px;
+  padding-left: 10px;
+  text-align: right;
   color: black;
 }
 
 div.sheet-stbeg input,
 div.sheet-stbeg span{
   height: 35px;
-  width: 45px;
+  width: 60px;
   font-size: 20px;
   font-weight: 600;
   color: black;
-  text-align: left;
-  padding-left: 0px;
+  text-align: center;
+  padding-left: 20px;
 }
 
 div.sheet-stbeg span{
   padding-top: 15px;
-  padding-left: 0px;
+  padding-left: 20px;
 }
 
 
@@ -295,40 +294,39 @@ div.sheet-stats{
 }
 
 div.sheet-stats div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/LineOnly.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BiJh8Wj.png);
   /* DONE Boarder No2 */
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 3px;
   height: 35px;
-  width: 135px;
+  width: 300px;
 }
 
 div.sheet-stats div.sheet-stat-block label{
-  width: 40px;
-  padding-left: 0px;
-  text-align: left;
+  width: 90px;
+  padding-left: 10px;
   color: black;
 }
 
 div.sheet-stats input,
 div.sheet-stats span{
   height: 35px;
-  width: 45px;
+  width: 60px;
   font-size: 20px;
   font-weight: 600;
   color: black;
-  text-align: left;
-  padding-left: 0px;
+  text-align: center;
+  padding-left: 20px;
 }
 
 div.sheet-stats span{
   padding-top: 15px;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 /* ------------------------------------------------------------ */
-/* stend SECTION end of the stats section */
+/* stend SECTION end of teh stats section */
 
 div.sheet-stend{
   grid-area: stend;
@@ -342,30 +340,29 @@ div.sheet-stend div.sheet-stat-block{
   background-size: contain;
   margin-top: 15px;
   height: 70px;
-  width: 135px;
+  width: 300px;
 }
 
 div.sheet-stend div.sheet-stat-block label{
-  width: 40px;
-  padding-left: 0px;
-  text-align: left;
+  width: 90px;
+  padding-left: 10px;
   color: black;
 }
 
 div.sheet-stend input,
 div.sheet-stend span{
   height: 35px;
-  width: 45px;
+  width: 60px;
   font-size: 20px;
   font-weight: 600;
   color: black;
-  text-align: left;
-  padding-left: 0px;
+  text-align: center;
+  padding-left: 20px;
 }
 
 div.sheet-stend span{
   padding-top: 15px;
-  padding-left: 0px;
+  padding-left: 10px;
 }
 
 /* ------------------------------------------------------------ */
