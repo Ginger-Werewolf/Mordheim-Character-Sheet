@@ -11,22 +11,20 @@
   <div class="stbeg section">
           
     <div class="stat-block flex-center">
-      <label>Char</label>
-      <label>Val</label>
-      <label>Roll</label>
+      <label></label>
     </div>
   </div>
 
   <div class="stats section">
     
     <div class="stat-block flex-center">
-      <label>M</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/M01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_M" type="number" value="0">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
     </div>
       
     <div class="stat-block flex-center">
-      <label>WS</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WS01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_WS" type="number" value="">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
       <!-- <input name="attr_WS_bonus" type="number" value="0"> -->
@@ -34,7 +32,7 @@
     </div>
 
     <div class="stat-block flex-center">
-      <label>BS</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BS01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_BS" type="number" value="0">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
       <!-- <input name="attr_BS_bonus" type="number" value="0"> -->
@@ -42,7 +40,7 @@
     </div>
 
     <div class="stat-block flex-center">
-      <label>S</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/S01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_S" type="number" value="0">
       <!-- <input name="attr_S_bonus" type="number" value="0"> -->
       <!-- <button name="roll_S" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under to their Strength of [[@{S} + @{S_bonus} ]] }} {{Roll = [[1D6]]<[[@{S}]] }}  "></button> -->
@@ -52,7 +50,7 @@
     </div>
 
     <div class="stat-block flex-center">
-      <label>T</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/T01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_T" type="number" value="0">
       <!-- <input name="attr_T_Bonus" type="number" value="0"> -->
       <!-- <button name="roll_T" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under to their Toughness of [[@{T} + @{T_bonus} ]] }} {{Roll = [[1D6]] }}  "></button> -->
@@ -62,14 +60,14 @@
     </div>
    
     <div class="stat-block flex-center">
-      <label>W</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/W01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_Wounds_max" type="number" value="0">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
       <!-- <input name="attr_A_bonus" type="number" value="0"> -->
     </div>
     
     <div class="stat-block flex-center">
-      <label>I</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/I01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_I" type="number" value="">
       <!-- <input name="attr_I_bonus" type="number" value=""> -->
       <!--  <button name="roll_I" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I} + @{I_bonus} ]] on 1D6}} {{Roll = [[1D6]] }} "></button> -->
@@ -79,14 +77,14 @@
     </div>
    
     <div class="stat-block flex-center">
-      <label>A</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/A01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_A" type="number" value="0">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
       <!-- <input name="attr_A_bonus" type="number" value="0"> -->
     </div>
 
     <div class="stat-block flex-center">
-      <label>Ld</label>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/LD01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_LD" type="number" value="0">
       <!-- <input name="attr_LD_bonus" type="number" value="0"> -->
       <button name="roll_LD" type="roll"
@@ -130,9 +128,9 @@
  <!-- Wounds SECTION -->
   <div class="wounds section">
     <div class="wound-block flex-center">
-      <label>Starting Wounds:</label>
+      <label> </label>
       <input name="attr_Wounds_max" type="number" value="1">
-      <label>Wounds Remaining:</label>
+      <label> </label>
       <input name="attr_Wounds" type="number" value="1">
     </div>
   </div>  
@@ -422,65 +420,57 @@
   <div class="meleewbeg section">
           
     <div class="stat-block flex-center">
-      <label></label>
-      <label>Roll Hit</label>
-      <label></label>
-      <label>Weapon </label>
-      <label></label>
-      <label> Name</label>
-      <label></label>
-      <label></label>
-      <label>Acc&pm;</label>
-      <label></label>
-      <label>Str Bon&pm;</label>
-      <label></label>
-      <label>AP</label>
-      <label></label>
-      <label>D</label>
-      <label></label>
-      <label>Weapon Traits: </label>
-	  <label></label>
-	  <label></label>
-	  <label>Roll Wound</label>
+      <label> </label>
     </div>
   </div>
-
+  
 <!-- Weapon List -->
   <div class="meleew section">
    
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack04" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap04_name}}} {{subtitle=with a [[@{MeleeWeap04_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{MeleeWeap04_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{MeleeWeap04_StrBon}}} {{Attack Roll= [[1D6+[[@{MeleeWeap04_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{MeleeWeap04_Traits} }} "> </button>
-      <input name="attr_MeleeWeap04_name" type="text" style="width: 120px;" value="Weapon04">
-      <input name="attr_MeleeWeap04_AccMelee" type="number" value="0">
-      <input name="attr_MeleeWeap04_StrBon" type="number" value="0">
-      <input name="attr_MeleeWeap04_AP" type="number" value="0">
-      <input name="attr_MeleeWeap04_D" type="number" value="0">
-      <textarea name="attr_MeleeWeap04_Traits" placeholder="Traits"></textarea>
-      <button name="roll_MeleeWound04" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=Using @{MeleeWeap04_name} with a Total Strength of [[@{S}+@{S_Bonus}+@{MeleeWeap04_StrBon}]] v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6]] }} {{Weapon AP= @{MeleeWeap04_AP} }} {{Weapon Damage= @{MeleeWeap04_D} }} {{Injury=@(table.Injury.1dW.img)}} {&simple}  }} "> </button>
+      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name}}} {{subtitle=with a [[@{MeleeWeap01_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{MeleeWeap01_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{MeleeWeap01_StrBon}}} {{Attack Roll= [[1D6+[[@{MeleeWeap01_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} "> </button>
+      <input name="attr_MeleeWeap01_name" type="text" style="width: 120px;" value="Weapon04">
+      <input name="attr_MeleeWeap01_StrBon" type="number" value="0">
+      <input name="attr_MeleeWeap01_AP" type="number" value="0">
+      <textarea name="attr_MeleeWeap01_Traits" placeholder="Special Rules"></textarea>
+      <select name="attr_MeleeWeap01_Crit">
+        <option selected="selected" value="0">Default</option>
+        <option value="1">Bludgeoning</option>
+        <option value="2">Bladed</option>
+        <option value="3">Unarmed</option>
+        <option value="4">Thrusting</option>
+      </select>
     </div>
 
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack05" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap05_name}}} {{subtitle=with a [[@{MeleeWeap05_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{MeleeWeap05_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{MeleeWeap05_StrBon}}} {{Attack Roll= [[1D6+[[@{MeleeWeap05_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound05)}} {{Weapon Traits= @{MeleeWeap05_Traits} }} "> </button>
-      <input name="attr_MeleeWeap05_name" type="text" style="width: 120px;" value="Weapon04">
-      <input name="attr_MeleeWeap05_AccMelee" type="number" value="0">
-      <input name="attr_MeleeWeap05_StrBon" type="number" value="0">
-      <input name="attr_MeleeWeap05_AP" type="number" value="0">
-      <input name="attr_MeleeWeap05_D" type="number" value="0">
-      <textarea name="attr_MeleeWeap05_Traits" placeholder="Traits"></textarea>
-      <button name="roll_MeleeWound05" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=Using @{MeleeWeap05_name} with a Total Strength of [[@{S}+@{S_Bonus}+@{MeleeWeap05_StrBon}]] v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6]] }} {{Weapon AP= @{MeleeWeap05_AP} }} {{Weapon Damage= @{MeleeWeap05_D} }}  {{Injury=@(table.Injury.1dW.img)}} {&simple}  }} "> </button>
+      <button name="roll_MeleeAttack02" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap02_name}}} {{subtitle=with a [[@{MeleeWeap02_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{MeleeWeap02_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{MeleeWeap02_StrBon}}} {{Attack Roll= [[1D6+[[@{MeleeWeap02_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{MeleeWeap02_Traits} }} "> </button>
+      <input name="attr_MeleeWeap02_name" type="text" style="width: 120px;" value="Weapon02">
+      <input name="attr_MeleeWeap02_StrBon" type="number" value="0">
+      <input name="attr_MeleeWeap02_AP" type="number" value="0">
+      <textarea name="attr_MeleeWeap02_Traits" placeholder="Special Rules"></textarea>
+      <select name="attr_MeleeWeap02_Crit">
+        <option selected="selected" value="0">Default</option>
+        <option value="1">Bludgeoning</option>
+        <option value="2">Bladed</option>
+        <option value="3">Unarmed</option>
+        <option value="4">Thrusting</option>
+      </select>
     </div>
-    
-   <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack06" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap06_name}}} {{subtitle=with a [[@{MeleeWeap06_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{MeleeWeap06_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{MeleeWeap06_StrBon}}} {{Attack Roll= [[1D6+[[@{MeleeWeap06_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound06)}} {{Weapon Traits= @{MeleeWeap06_Traits} }} "> </button>
-      <input name="attr_MeleeWeap06_name" type="text" style="width: 120px;" value="Weapon04">
-      <input name="attr_MeleeWeap06_AccMelee" type="number" value="0">
-      <input name="attr_MeleeWeap06_StrBon" type="number" value="0">
-      <input name="attr_MeleeWeap06_AP" type="number" value="0">
-      <input name="attr_MeleeWeap06_D" type="number" value="0">
-      <textarea name="attr_MeleeWeap06_Traits" placeholder="Traits"></textarea>
-      <button name="roll_MeleeWound06" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=Using @{MeleeWeap06_name} with a Total Strength of [[@{S}+@{S_Bonus}+@{MeleeWeap06_StrBon}]] v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6]] }} {{Weapon AP= @{MeleeWeap06_AP} }} {{Weapon Damage= @{MeleeWeap06_D} }} {{Injury=@(table.Injury.1dW.img)}} {&simple}  }} "> </button>
+
+    <div class="stat-block flex-center">
+      <button name="roll_MeleeAttack03" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap03_name}}} {{subtitle=with a [[@{MeleeWeap03_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{MeleeWeap03_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{MeleeWeap03_StrBon}}} {{Attack Roll= [[1D6+[[@{MeleeWeap03_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{MeleeWeap03_Traits} }} "> </button>
+      <input name="attr_MeleeWeap03_name" type="text" style="width: 120px;" value="Dagger">
+      <input name="attr_MeleeWeap03_StrBon" type="number" value="0">
+      <input name="attr_MeleeWeap03_AP" type="number" value="1">
+      <textarea name="attr_MeleeWeap03_Traits" placeholder="+1 Enemy armour save: Daggers are not the best weapons to use for penetrating an enemy model's armour. An enemy wounded by a dagger gains a +1 bonus to his armour save, and a 6+ armour save if he has none normally."></textarea>
+      <select name="attr_MeleeWeap03_Crit">
+        <option value="0">Default</option>
+        <option value="1">Bludgeoning</option>
+        <option value="2">Bladed</option>
+        <option value="3">Unarmed</option>
+        <option value="4">Thrusting</option>
+      </select>
     </div>
-    
   </div>
         
 <!-- Weapon List End-->

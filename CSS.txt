@@ -71,7 +71,7 @@ textarea {
   height: 60%;
   margin-right: 15px;
   margin-left: 15px;
-  color: black;
+  color: #808080;
   font-family: 'Times New Roman', monospace;
 }
 
@@ -253,10 +253,7 @@ div.sheet-stbeg{
 
 
 div.sheet-stbeg div.sheet-stat-block{
-  /*
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ctdAK6A.png);
-  */
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/LineOnly.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/CharV05.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
@@ -317,7 +314,7 @@ div.sheet-stats span{
   height: 35px;
   width: 45px;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 800;
   color: black;
   text-align: center;
   padding-left: 0px;
@@ -378,7 +375,7 @@ div.sheet-wounds{
 }
 
 div.sheet-wounds div.sheet-wound-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WoundsBloodBorder.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WoundsBloodBorderText.png);
     /* DONE Boarder No3 */
   background-repeat: no-repeat;
   background-size: contain;
@@ -414,7 +411,7 @@ div.sheet-armour{
 }
 
 div.sheet-armour div.sheet-armour-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-Save-Type.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-Save-Type-Red.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -465,7 +462,7 @@ div.sheet-GangerType{
 }
 
 div.sheet-GangerType div.sheet-type-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/jkJjXtv.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/TypeWarrior01.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -558,7 +555,7 @@ div.sheet-name{
 }
 
 div.sheet-name div.sheet-section-small{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/stYtCAP.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Name01.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 70px;
@@ -603,8 +600,7 @@ div.sheet-name input[type="number"] {
 
 div.sheet-treasure{
   grid-area: treasure;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Special.png);
-  /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ouwuMnb.png*/
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/SpecialRules01.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 225px;
@@ -617,6 +613,7 @@ div.sheet-treasure label{
 
 div.sheet-treasure textarea{
   height: 60%;
+  font-size: 1.1em;
   margin-top: 10px;
   margin-left: 14px;
 }
@@ -834,8 +831,7 @@ div.sheet-meleewbeg{
 
 
 div.sheet-meleewbeg div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/kV4sW9L.png);
-   /* DONE Boarder No7 */
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeBanner03.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
@@ -878,7 +874,6 @@ div.sheet-meleew{
 
 div.sheet-meleew div.sheet-stat-block{
   background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/GE92DRk.png);
-    /* DONE Boarder No9 */
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 5px;
