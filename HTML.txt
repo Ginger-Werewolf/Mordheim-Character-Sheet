@@ -281,6 +281,15 @@
 </div>
 
 
+<!-- Middle Break Section-->
+
+  <div class="MidBReak section">
+          
+    <div class="stat-block flex-center">
+      <label> </label>
+    </div>
+  </div>
+
 
 <!-- MAIN WEAPON SECTION -->
 <!-- Weapon List Start-->
@@ -289,35 +298,6 @@
           
     <div class="stat-block flex-center">
       <label></label>
-      <label>Roll Hit</label>
-      <label></label>
-      <label>Weapon </label>
-      <label></label>
-      <label> Name</label>
-      <label></label>
-      <label></label>
-      <label>Rng S"</label>
-      <label></label>
-      <label>Rng L"</label>
-      <label></label>
-      <label>Acc S&pm;</label>
-      <label></label>
-      <label>Acc L&pm;</label>
-      <label></label>
-      <label>Str</label>
-      <label></label>
-	  <label>AP</label>
-      <label></label>
-	  <label>D</label>
-      <label></label>
-	  <label>AM&#43;</label>
-	  <label></label>
-      <label></label>
-	  <label>Rapid Fire</label>
-	  <label> </label>
-      <label> </label>
-	  <label> </label>
-	  <label>Roll Wound</label>
     </div>
   </div>
 
@@ -325,83 +305,43 @@
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/iVTlH05.png" alt="Melee" width="45" height="25"> <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/kSNiWz9.png" alt="Ranged" width="45" height="25">
 -->
   
-<!-- Weapon List -->
+<!-- Ranged Weapon List -->
   <div class="weapons section">
    
-    <div class="stat-block flex-center">
-      <button name="roll_Attack1" type="roll" value="!&{template:necRanged}} {{title=@{character_name}&#39;s @{Weapon01_name}}} {{subtitle=with a [[?{Range|Short,@{Weapon01_AccS}|Long,@{Weapon01_AccL}}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Short Range=0&#39;&#39; -> @{Weapon01_RngS}&#39;&#39; with a @{Weapon01_AccS} modifier}} {{Long Range=@{Weapon01_RngS}&#39;&#39; -> @{Weapon01_RngL}&#39;&#39; with a @{Weapon01_AccL} modifier}} {{Attack Roll= [[1D6+@{BS_bonus}+?{Range|Short,@{Weapon01_AccS}|Long,@{Weapon01_AccL}}+?{Additional To Hit Modifiers|No, 0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS}+ [Roll To Wound](~Wound1) }} {{Weapon Strength= @{Weapon01_Str}}} {{Weapon Traits= @{Weapon01_Traits} }} {{Firepower Dice= Number of Dice: [[@{Weapon01_RF}]]}} !somescript {& if [[@{Weapon01_RF}]] = [[3]] } {{desc=@(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) }} {&simple} {& elseif [[@{Weapon01_RF}]] = [[2]] } {{desc=@(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) {&simple} }} {& elseif [[@{Weapon01_RF}]] = [[1]] } {{desc=@(table.Firepower.1dW.img) {&simple} }} {& else} {{desc=No Rapid Fire - check for Jam @(table.Firepower.1dW.img) }} {&simple} {& end} {&simple}" > </button>
-      <input name="attr_Weapon01_name" type="text" style="width: 120px;" value="Weapon01">
-      <input name="attr_Weapon01_RngS" type="number" value="0">
-      <input name="attr_Weapon01_RngL" type="number" value="0">
-      <input name="attr_Weapon01_AccS" type="number" value="0">
-      <input name="attr_Weapon01_AccL" type="number" value="0">
-      <input name="attr_Weapon01_Str" type="number" value="0">
-	  <input name="attr_Weapon01_AP" type="number" value="0">
-	  <input name="attr_Weapon01_D" type="number" value="0">
-	  <input name="attr_Weapon01_AM" type="number" value="0">
-	  <select name="attr_Weapon01_RF">
-        <option value="0">Not Rapid Fire</option>
-        <option value="1">Rapid Fire(1)</option>
-        <option value="2">Rapid Fire(2)</option>
-        <option value="3">Rapid Fire(3)</option>
-      </select>
-      <button name="roll_Wound1" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{Weapon01_Str} v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6]] }} {{Weapon AP= @{Weapon01_AP} }} {{Weapon Damage= @{Weapon01_D} }} {{Injury=@(table.Injury.1dW.img)}} {&simple}  }} "> </button>
-    </div>
-    
-    <div class="stat-block flex-center flex-middle">
-       <label>Weapon Traits: </label>
-       <textarea name="attr_Weapon01_Traits" placeholder="Traits"></textarea>    
-	</div>
-	
-    <div class="stat-block flex-center">
-      <button name="roll_Attack2" type="roll" value="!&{template:necRanged}} {{title=@{character_name}&#39;s @{Weapon02_name}}} {{subtitle=with a [[?{Range|Short,@{Weapon02_AccS}|Long,@{Weapon02_AccL}}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Short Range=0&#39;&#39; -> @{Weapon02_RngS}&#39;&#39; with a @{Weapon02_AccS} modifier}} {{Long Range=@{Weapon02_RngS}&#39;&#39; -> @{Weapon02_RngL}&#39;&#39; with a @{Weapon02_AccL} modifier}} {{Attack Roll= [[1D6+@{BS_bonus}+?{Range|Short,@{Weapon02_AccS}|Long,@{Weapon02_AccL}}+?{Additional To Hit Modifiers|No, 0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS}+ [Roll To Wound](~Wound2) }} {{Weapon Strength= @{Weapon02_Str}}} {{Weapon Traits= @{Weapon02_Traits} }} {{Firepower Dice= Number of Dice: [[@{Weapon02_RF}]]}} !somescript {& if [[@{Weapon02_RF}]] = [[3]] } {{desc=@(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) }} {&simple} {& elseif [[@{Weapon02_RF}]] = [[2]] } {{desc=@(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) {&simple} }} {& elseif [[@{Weapon02_RF}]] = [[1]] } {{desc=@(table.Firepower.1dW.img) {&simple} }} {& else} {{desc=No Rapid Fire - check for Jam @(table.Firepower.1dW.img) }} {&simple} {& end} {&simple} "> </button>
-      <input name="attr_Weapon02_name" type="text" style="width: 120px;" value="Weapon02">
-      <input name="attr_Weapon02_RngS" type="number" value="0">
-      <input name="attr_Weapon02_RngL" type="number" value="0">
-      <input name="attr_Weapon02_AccS" type="number" value="0">
-      <input name="attr_Weapon02_AccL" type="number" value="0">
-      <input name="attr_Weapon02_Str" type="number" value="0">
-	  <input name="attr_Weapon02_AP" type="number" value="0">
-	  <input name="attr_Weapon02_D" type="number" value="0">
-	  <input name="attr_Weapon02_AM" type="number" value="0">
-	  <select name="attr_Weapon02_RF">
-        <option value="0">Not Rapid Fire</option>
-        <option value="1">Rapid Fire(1)</option>
-        <option value="2">Rapid Fire(2)</option>
-        <option value="3">Rapid Fire(3)</option>
-      </select>
-      <button name="roll_Wound2" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{Weapon02_Str} v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6]] }} {{Weapon AP= @{Weapon02_AP} }} {{Weapon Damage= @{Weapon02_D} }} {{Injury=@(table.Injury.1dW.img)}} {&simple}  }}"> </button> 
-    </div>
-    
-    <div class="stat-block flex-center flex-middle">
-       <label>Weapon Traits: </label>
-       <textarea name="attr_Weapon02_Traits" placeholder="Traits"></textarea>    
-	</div>
     
     <div class="stat-block flex-center">
-      <button name="roll_Attack3" type="roll" value="!&{template:necRanged}} {{title=@{character_name}&#39;s @{Weapon03_name}}} {{subtitle=with a [[?{Range|Short,@{Weapon03_AccS}|Long,@{Weapon03_AccL}}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Short Range=0&#39;&#39; -> @{Weapon03_RngS}&#39;&#39; with a @{Weapon03_AccS} modifier}} {{Long Range=@{Weapon03_RngS}&#39;&#39; -> @{Weapon03_RngL}&#39;&#39; with a @{Weapon03_AccL} modifier}} {{Attack Roll= [[1D6+@{BS_bonus}+?{Range|Short,@{Weapon03_AccS}|Long,@{Weapon03_AccL}}+?{Additional To Hit Modifiers|No, 0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS}+ [Roll To Wound](~Wound3) }} {{Weapon Strength= @{Weapon03_Str}}} {{Weapon Traits= @{Weapon03_Traits} }} {{Firepower Dice= Number of Dice: [[@{Weapon03_RF}]]}} !somescript {& if [[@{Weapon03_RF}]] = [[3]] } {{desc=@(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) }} {&simple} {& elseif [[@{Weapon03_RF}]] = [[2]] } {{desc=@(table.Firepower.1dW.img) &#38; @(table.Firepower.1dW.img) {&simple} }} {& elseif [[@{Weapon03_RF}]] = [[1]] } {{desc=@(table.Firepower.1dW.img) {&simple} }} {& else} {{desc=No Rapid Fire - check for Jam @(table.Firepower.1dW.img) }} {&simple} {& end} {&simple} "> </button>
-      <input name="attr_Weapon03_name" type="text" style="width: 120px;" value="Weapon03">
-      <input name="attr_Weapon03_RngS" type="number" value="0">
-      <input name="attr_Weapon03_RngL" type="number" value="0">
-      <input name="attr_Weapon03_AccS" type="number" value="0">
-      <input name="attr_Weapon03_AccL" type="number" value="0">
-      <input name="attr_Weapon03_Str" type="number" value="0">
-	  <input name="attr_Weapon03_AP" type="number" value="0">
-	  <input name="attr_Weapon03_D" type="number" value="0">
-	  <input name="attr_Weapon03_AM" type="number" value="0">
-	  <select name="attr_Weapon03_RF">
-        <option value="0">Not Rapid Fire</option>
-        <option value="1">Rapid Fire(1)</option>
-        <option value="2">Rapid Fire(2)</option>
-        <option value="3">Rapid Fire(3)</option>
+      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[@{RngWeap01_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{RngWeap01_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6+[[@{RngWeap01_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{RngWeap01_Traits} }} "> </button>
+      <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
+      <input name="attr_RngWeap01_rng" type="number" value="0">
+      <input name="attr_RngWeap01_StrBon" type="number" value="0">
+      <input name="attr_RngWeap01_AP" type="number" value="0">
+      <textarea name="attr_RngWeap01_Traits" placeholder="Special Rules"></textarea>
+      <select name="attr_RngWeap01_Crit">
+        <option selected="selected" value="0">Default</option>
+        <option value="1">Ranged</option>
+        <option value="2">Bludgeoning</option>
+        <option value="3">Bladed</option>
+        <option value="4">Unarmed</option>
+        <option value="5">Thrusting</option>
       </select>
-      <button name="roll_Wound3" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{Weapon03_Str} v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6]] }} {{Weapon AP= @{Weapon03_AP} }} {{Weapon Damage= @{Weapon03_D} }} {{Injury=@(table.Injury.1dW.img)}} {&simple}  }} "> </button>
     </div>
     
-    <div class="stat-block flex-center flex-middle">
-       <label>Weapon Traits: </label>
-       <textarea name="attr_Weapon03_Traits" placeholder="Traits"></textarea>    
-	</div>
+     <div class="stat-block flex-center">
+      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[@{RngWeap02_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Accuracy Bonus= @{RngWeap02_AccMelee}}} {{Native Strength=[[@{S} + @{S_bonus}]]}} {{Weapon Strength Mod=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6+[[@{RngWeap02_AccMelee}+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{RngWeap02_Traits} }} "> </button>
+      <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
+      <input name="attr_RngWeap02_rng" type="number" value="0">
+      <input name="attr_RngWeap02_StrBon" type="number" value="0">
+      <input name="attr_RngWeap02_AP" type="number" value="0">
+      <textarea name="attr_RngWeap02_Traits" placeholder="Special Rules"></textarea>
+      <select name="attr_RngWeap02_Crit">
+        <option selected="selected" value="0">Default</option>
+        <option value="1">Ranged</option>
+        <option value="2">Bludgeoning</option>
+        <option value="3">Bladed</option>
+        <option value="4">Unarmed</option>
+        <option value="5">Thrusting</option>
+      </select>
+    </div>
 	
   </div>
         
