@@ -174,24 +174,22 @@ div.sheet-main {
   grid-template-areas:".          .          ."
                       ".          logo       treasure"
                       "stbeg      logo       treasure"
+                      "stats      .          treasure"
                       "stats      name       treasure"
                       "stats      name       treasure"
+                      "stats      .          treasure"
                       "stats      GangerType treasure"
                       "stats      GangerType treasure"
+/*                      "stats      .          treasure" */
                       "stats      wounds     treasure"
                       "stats      wounds     treasure"
                       "stats      armour     treasure"
                       "stats      armour     treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stats      .          treasure"
-                      "stend      .          ."
                       "meleewbeg  meleewbeg  meleewbeg"
                       "meleew     meleew     meleew"
                       "meleew     meleew     meleew"
                       "meleew     meleew     meleew"
                       "meleewend  meleewend  meleewend"
-                      ".          .          ."
                       "weaponsbeg weaponsbeg weaponsbeg"
                       "weapons    weapons    weapons"
                       "weapons    weapons    weapons"
@@ -255,17 +253,19 @@ div.sheet-stbeg{
 
 
 div.sheet-stbeg div.sheet-stat-block{
+  /*
   background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ctdAK6A.png);
-  /* DONE Boarder No1 */
+  */
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/LineOnly.png);
   background-repeat: no-repeat;
   background-size: contain;
-  height: 35px;
+  height: 40px;
   width: 135px;
 }
 
 div.sheet-stbeg div.sheet-stat-block label{
   width: 45px;
-  padding-left: 0px;
+  padding-left: 5px;
   text-align: center;
   color: black;
 }
@@ -301,7 +301,7 @@ div.sheet-stats div.sheet-stat-block{
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 3px;
-  height: 35px;
+  height: 40px;
   width: 135px;
 }
 
@@ -603,7 +603,7 @@ div.sheet-name input[type="number"] {
 
 div.sheet-treasure{
   grid-area: treasure;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Special-Rules.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Special.png);
   /* DONE Boarder No6 Old https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/gT2KE4N.png or https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/ouwuMnb.png*/
   background-repeat: no-repeat;
   background-size: contain;
