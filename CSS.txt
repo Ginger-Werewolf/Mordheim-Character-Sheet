@@ -595,7 +595,7 @@ div.sheet-name input[type="number"] {
 
 div.sheet-treasure{
   grid-area: treasure;
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/SpecialRules01.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Special01.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 225px;
