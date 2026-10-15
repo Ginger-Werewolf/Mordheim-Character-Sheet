@@ -355,7 +355,7 @@
   <div class="meleew section">
    
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWnd1)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} {{Critical Type= @{MeleeWeap01_Crit} }}"> </button>
+      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWnd01)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} {{Critical Type= @{MeleeWeap01_Crit} }}"> </button>
       <input name="attr_MeleeWeap01_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap01_StrBon" type="number" value="0">
       <input name="attr_MeleeWeap01_AP" type="number" value="0">
@@ -368,47 +368,53 @@
         <option value="Thrusting">Thrusting</option>
       </select>
       <label> </label>
-      <!-- <button name="roll_MeleeWnd1" type="roll" value="!&{template:necWound}} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound= [[1D6cs6]] }} {{Weapon AP= @{MeleeWeap01_AP} }} {{Weapon Trait= @{MeleeWeap01_Traits} }} {&simple}  }} "> </button> -->
-      <button name="roll_MeleeWnd1" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap01_AP}}} {{Weapon Trait=@{MeleeWeap01_Traits}}} {{Critical Type=@{MeleeWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <button name="roll_MeleeWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap01_AP}}} {{Weapon Trait=@{MeleeWeap01_Traits}}} {{Critical Type=@{MeleeWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
       </button>
     </div>
 
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack02" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap02_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap02_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap02_StrBon}}} {{Attack Roll= [[1D6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{MeleeWeap02_Traits} }} "> </button>
+      <button name="roll_MeleeAttack02" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap02_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap02_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWnd02)}} {{Weapon Traits= @{MeleeWeap02_Traits} }} {{Critical Type= @{MeleeWeap02_Crit} }}"> </button>
       <input name="attr_MeleeWeap02_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap02_StrBon" type="number" value="0">
       <input name="attr_MeleeWeap02_AP" type="number" value="0">
       <textarea name="attr_MeleeWeap02_Traits" placeholder="Special Rules"></textarea>
       <select name="attr_MeleeWeap02_Crit">
-        <option selected="selected" value="0">Default</option>
-        <option value="1">Bludgeoning</option>
-        <option value="2">Bladed</option>
-        <option value="3">Unarmed</option>
-        <option value="4">Thrusting</option>
+        <option selected="selected" value="Default">Default</option>
+        <option value="Bludgeoning">Bludgeoning</option>
+        <option value="Bladed">Bladed</option>
+        <option value="Unarmed">Unarmed</option>
+        <option value="Thrusting">Thrusting</option>
       </select>
+      <label> </label>
+      <button name="roll_MeleeWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap02_AP}}} {{Weapon Trait=@{MeleeWeap02_Traits}}} {{Critical Type=@{MeleeWeap02_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      </button>
     </div>
 
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack03" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap03_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap03_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap03_StrBon}}} {{Attack Roll= [[1D6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWound04)}} {{Weapon Traits= @{MeleeWeap03_Traits} }} "> </button>
-      <input name="attr_MeleeWeap03_name" type="text" style="width: 120px;" value="Dagger">
+      <button name="roll_MeleeAttack03" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap03_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap03_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap03_StrBon}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWnd03)}} {{Weapon Traits= @{MeleeWeap03_Traits} }} {{Critical Type= @{MeleeWeap03_Crit} }}"> </button>
+      <input name="attr_MeleeWeap03_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap03_StrBon" type="number" value="0">
-      <input name="attr_MeleeWeap03_AP" type="number" value="1">
-      <textarea name="attr_MeleeWeap03_Traits" placeholder="+1 Enemy armour save: Daggers are not the best weapons to use for penetrating an enemy model's armour. An enemy wounded by a dagger gains a +1 bonus to his armour save, and a 6+ armour save if he has none normally."></textarea>
+      <input name="attr_MeleeWeap03_AP" type="number" value="0">
+      <textarea name="attr_MeleeWeap03_Traits" placeholder="Special Rules"></textarea>
       <select name="attr_MeleeWeap03_Crit">
-        <option value="0">Default</option>
-        <option value="1">Bludgeoning</option>
-        <option value="2">Bladed</option>
-        <option value="3">Unarmed</option>
-        <option value="4">Thrusting</option>
+        <option selected="selected" value="Default">Default</option>
+        <option value="Bludgeoning">Bludgeoning</option>
+        <option value="Bladed">Bladed</option>
+        <option value="Unarmed">Unarmed</option>
+        <option value="Thrusting">Thrusting</option>
       </select>
+      <label> </label>
+      <button name="roll_MeleeWnd03" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap03_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap03_AP}}} {{Weapon Trait=@{MeleeWeap03_Traits}}} {{Critical Type=@{MeleeWeap03_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      </button>
     </div>
-  </div>
         
 <!-- Weapon List End-->
   
   <div class="meleewend section">
     <div class="stat-block flex-center">
       <label> </label>
+      <label> </label>
+      <label> </label> 
     </div>
   </div>
 
