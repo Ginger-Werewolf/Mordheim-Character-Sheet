@@ -237,7 +237,6 @@ div.sheet-logo span{
 }
 
 
-
 /* ------------------------------------------------------------ */
 /* stbeg (Stat Beginning where I put in the Column titles SECTION */
 
@@ -622,7 +621,7 @@ div.sheet-notessect {
   background-repeat: no-repeat;
   background-size: contain;
   height: 228px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-notessect label {
@@ -632,6 +631,7 @@ div.sheet-notessect label {
 /* Experience boxes: 30 columns x 3 rows */
 
 div.sheet-notessect-xp {
+  padding-top: 18px;
   display: grid;
   grid-template-columns: repeat(30, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -686,12 +686,12 @@ div.sheet-weaponsbeg{
 
 
 div.sheet-weaponsbeg div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RangedBanner01.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RangedBan01.png);
    /* DONE Boarder No7 */
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-weaponsbeg div.sheet-stat-block label{
@@ -729,13 +729,13 @@ div.sheet-weapons{
 }
 
 div.sheet-weapons div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WeaponsSeparator.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WeaponsSeparator01.png);
     /* DONE Boarder No9 */
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 5px;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-weapons div.sheet-stat-block label{
@@ -786,13 +786,13 @@ div.sheet-weaponsend{
 
 
 div.sheet-weaponsend div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RangedSeparator.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RangedSeparator01.png);
      /* DONE Boarder No8 */
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 20px;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-weaponsend div.sheet-stat-block label{
@@ -826,11 +826,11 @@ div.sheet-meleewbeg{
 
 
 div.sheet-meleewbeg div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeBanner04.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeBanner06.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-meleewbeg div.sheet-stat-block label{
@@ -868,12 +868,12 @@ div.sheet-meleew{
 }
 
 div.sheet-meleew div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WeaponsSeparator.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WeaponsSeparator01.png);
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 5px;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-meleew div.sheet-stat-block label{
@@ -922,13 +922,13 @@ div.sheet-meleewend{
 
 
 div.sheet-meleewend div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeSeparator.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeSeparator01.png);
      /* DONE Boarder No8 */
   background-repeat: no-repeat;
   background-size: contain;
   margin-top: 20px;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-meleewend div.sheet-stat-block label{
@@ -964,11 +964,11 @@ div.sheet-MidBReak{
 
 
 div.sheet-MidBReak div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeSeparator.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/MeleeSeparator01.png);
   background-repeat: no-repeat;
   background-size: contain;
   height: 40px;
-  width: 650px;
+  width: 800px;
 }
 
 div.sheet-MidBReak div.sheet-stat-block label{
@@ -1035,7 +1035,7 @@ div.sheet-MidBReak span{
 }
 .sheet-rolltemplate-necMelee .sheet-title img.sheet-NecroLogo {
   width: 298px;
-  height: 66px;
+  height: 33px;
   float: middle;
 }
 
@@ -1412,7 +1412,7 @@ div.sheet-MidBReak span{
 }
 .sheet-rolltemplate-necWound .sheet-title img.sheet-NecroLogo {
   width: 298px;
-  height: 81px;
+  height: 60px;
   float: middle;
 }
 
@@ -1470,7 +1470,34 @@ div.sheet-MidBReak span{
   text-align: center;
   font-family: 'Times New Roman', monospace;
 }
+.sheet-rolltemplate-necWound .sheet-critical {
+  background: #E3DAC9;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  border-top: 3px solid black;
+}
 
+.sheet-rolltemplate-necWound .sheet-critical-title {
+  font-family: 'Times New Roman', monospace;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.sheet-rolltemplate-necWound img.sheet-critical-table {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 5px auto;
+}
+
+.sheet-rolltemplate-necWound .sheet-critical-roll {
+  font-family: 'Times New Roman', monospace;
+  font-weight: bold;
+  padding: 5px;
+}
 
 /* ------------------------------------------------------------ */
 
