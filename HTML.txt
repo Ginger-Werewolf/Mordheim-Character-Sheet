@@ -296,31 +296,33 @@
    
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS} [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} "> </button>
+      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS} [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} {{Critical Type= @{RngWeap01_Crit} }}"> </button>
       <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
       <input name="attr_RngWeap01_rng" type="number" value="0">
       <input name="attr_RngWeap01_StrBon" type="number" value="0">
       <input name="attr_RngWeap01_AP" type="number" value="0">
       <textarea name="attr_RngWeap01_Traits" placeholder="Special Rules"></textarea>
       <select name="attr_RngWeap01_Crit">
-        <option selected="selected" value="0">Default</option>
-        <option value="1">Ranged</option>
+        <option selected="selected" value="Default">Default</option>
+        <option value="Missile">Missile</option>
       </select>
-      <button name="roll_RngWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap01_AP}}} {{Weapon Trait=@{RngWeap01_Traits}}} {{Critical Type=@{RngWeap01_Critt}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <label> </label>
+      <button name="roll_RngWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap01_AP}}} {{Weapon Trait=@{RngWeap01_Traits}}} {{Critical Type=@{RngWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
     </div>
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS} [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} "> </button>
+      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS} [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} {{Critical Type= @{RngWeap02_Crit} }}"> </button>
       <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
       <input name="attr_RngWeap02_rng" type="number" value="0">
       <input name="attr_RngWeap02_StrBon" type="number" value="0">
       <input name="attr_RngWeap02_AP" type="number" value="0">
       <textarea name="attr_RngWeap02_Traits" placeholder="Special Rules"></textarea>
       <select name="attr_RngWeap02_Crit">
-        <option selected="selected" value="0">Default</option>
-        <option value="1">Ranged</option>
+        <option selected="selected" value="Default">Default</option>
+        <option value="Missile">Missile</option>
       </select>
-      <button name="roll_RngWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap02_AP}}} {{Weapon Trait=@{RngWeap02_Traits}}} {{Critical Type=@{RngWeap02_Critt}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <label> </label>
+      <button name="roll_RngWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap02_AP}}} {{Weapon Trait=@{RngWeap02_Traits}}} {{Critical Type=@{RngWeap02_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
     </div>
 	
   </div>
@@ -445,7 +447,7 @@
 <rolltemplate class="sheet-rolltemplate-necRanged">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/K7Jd5kc.png" alt="Necromunda"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BSChart.png" alt="Necromunda"> </div>{{/title}}
       {{#title}}<div class="sheet-title">{{title}}<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/kSNiWz9.png" alt="Ranged Shot"> </div>{{/title}}
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
       {{#RapidFire}}<div class="sheet-RapidFire">{{RapidFire}}</div>{{/RapidFire}}

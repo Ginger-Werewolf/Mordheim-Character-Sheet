@@ -189,7 +189,7 @@ div.sheet-main {
                       "meleew     meleew     meleew"
                       "meleew     meleew     meleew"
                       "meleew     meleew     meleew"
-/*                      "meleewend  meleewend  meleewend" */
+                      "meleewend  meleewend  meleewend"
                       ".          .           ."
                       "weaponsbeg weaponsbeg weaponsbeg"
                       "weapons    weapons    weapons"
