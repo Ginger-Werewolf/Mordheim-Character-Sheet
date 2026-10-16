@@ -189,7 +189,8 @@ div.sheet-main {
                       "meleew     meleew     meleew"
                       "meleew     meleew     meleew"
                       "meleew     meleew     meleew"
-                      "meleewend  meleewend  meleewend"
+/*                      "meleewend  meleewend  meleewend" */
+                      ".          .           ."
                       "weaponsbeg weaponsbeg weaponsbeg"
                       "weapons    weapons    weapons"
                       "weapons    weapons    weapons"
@@ -198,7 +199,7 @@ div.sheet-main {
                       "notessect  notessect  notessect"
                       "notessect  notessect  notessect"
                       "notessect  notessect  notessect"
-                      "notessect  notessect  notessect"
+                      "notessect  notessect  notessect" 
                       "notessect  notessect  notessect";
 
 
