@@ -39,9 +39,8 @@
     <div class="stat-block flex-center">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BS01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_BS" type="number" value="0">
-      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
-      <!-- <input name="attr_BS_bonus" type="number" value="0"> -->
-      <!-- <button name="roll_BS" type="roll" value="&{template:default} {{name=@{character_name}'s Ballistic To Hit}} {{Result=[[d6>@{BS}+@{BS_bonus}]]}}"></button> -->
+      <input name="attr_BS_Calculated" type="number" value="7" readonly>
+      <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Plus.png" alt="No Roll" style="width:25px;height:25px;">
     </div>
 
     <div class="stat-block flex-center">
@@ -50,7 +49,7 @@
       <!-- <input name="attr_S_bonus" type="number" value="0"> -->
       <!-- <button name="roll_S" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under to their Strength of [[@{S} + @{S_bonus} ]] }} {{Roll = [[1D6]]<[[@{S}]] }}  "></button> -->
       <button name="roll_S" type="roll"
-      value="&{template:necGeneric} {{title=@{character_name}'s Strength Test}} {{subtitle=Rolling equal to or under their Strength of [[@{S}]]}} {{Roll=[[1d6cs&lt;[[@{S}]]cf&gt;[[@{S}+1]]]]}}">
+      value="&{template:necGeneric} {{title=@{character_name}'s Strength Test}} {subtitle=@{character_name}'s Strength Test &le; [[@{S}]]}} {{Roll=[[1d6cs&lt;[[@{S}]]cf&gt;[[@{S}+1]]]]}}">
       </button>
     </div>
 
@@ -60,7 +59,7 @@
       <!-- <input name="attr_T_Bonus" type="number" value="0"> -->
       <!-- <button name="roll_T" type="roll" value="&{template:necGeneric}} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under to their Toughness of [[@{T} + @{T_bonus} ]] }} {{Roll = [[1D6]] }}  "></button> -->
       <button name="roll_T" type="roll"
-      value="&{template:necGeneric} {{title=@{character_name}'s Toughness Test}} {{subtitle=Rolling equal to or under their Toughness of [[@{T}]]}} {{Roll=[[1d6cs&lt;[[@{T}]]cf&gt;[[@{T}+1]]]]}}">
+      value="&{template:necGeneric} {{title=@{character_name}'s Toughness Test}} {subtitle=@{character_name}'s Toughness Test &le;  [[@{T}]]}} {{Roll=[[1d6cs&lt;[[@{T}]]cf&gt;[[@{T}+1]]]]}}">
       </button>
     </div>
    
@@ -77,7 +76,7 @@
       <!-- <input name="attr_I_bonus" type="number" value=""> -->
       <!--  <button name="roll_I" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I} + @{I_bonus} ]] on 1D6}} {{Roll = [[1D6]] }} "></button> -->
       <button name="roll_I" type="roll"
-      value="&{template:necGeneric} {{title=@{character_name}'s Initiative Test}} {{subtitle=Rolling equal to or under their Initiative of [[@{I}]]}} {{Roll=[[1d6cs&lt;[[@{I}]]cf&gt;[[@{I}+1]]]]}}">
+      value="&{template:necGeneric} {{title=@{character_name}'s Initiative Test}} {{subtitle=@{character_name}'s Initiative Test &le; [[@{I}]]}} {{Roll=[[1d6cs&lt;[[@{I}]]cf&gt;[[@{I}+1]]]]}}">
       </button>
     </div>
    
@@ -92,8 +91,14 @@
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/LD01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_LD" type="number" value="0">
       <!-- <input name="attr_LD_bonus" type="number" value="0"> -->
-      <button name="roll_LD" type="roll"
-        value="&{template:necGeneric} {{title=@{character_name}'s Leadership Test}} {{subtitle=Rolling equal to or under their Leadership of [[@{LD}]]}} {{Roll=[[2d6cs<[[ @{LD} ]]cf>[[ @{LD}+1 ]] ]]}}">
+      
+<button name="roll_LD" type="roll"
+  value="&{template:necGeneric} {{title=@{character_name}'s Leadership Test}} {{subtitle=@{character_name}'s Leadership Test &le; [[?{Whose Leadership?|Own,@{LD}|Another Character,?{Other Character's Ld?}}]]}} {{Roll=[[2d6cs&lt;[[?{Whose Leadership?|Own,@{LD}|Another Character,?{Other Character's Ld?}}]]cf&gt;[[?{Whose Leadership?|Own,@{LD}|Another Character,?{Other Character's Ld?}}+1]]]]}}">
+</button>
+
+      
+ <!--     <button name="roll_LD" type="roll"
+        value="&{template:necGeneric} {{title=@{character_name}'s Leadership Test}} {subtitle=@{character_name}'s Leadership Test &le; [[@{LD}]]}} {{Roll=[[2d6cs<[[ @{LD} ]]cf>[[ @{LD}+1 ]] ]]}}">
       </button>
       <!-- <button name="roll_BS" type="roll" value="&{template:necGeneric}} {{title=@{character_name}&#39;s Leadership Test}} {{subtitle=Rolling equal to or over their Leadership of [[@{LD} + @{LD_bonus} ]] on 2D6}} {{Roll = [[2D6]] }}"></button> -->
     </div>
@@ -129,7 +134,7 @@
     <div class="armour-block flex-center">
       <input name="attr_SaveThrow" type="number" value="">
       <label> </label>
-      <button name="roll_save" type="roll" value="&{template:necShield}} {{title=@{character_name}&#39;s armour }} {{subtitle= Using @{ArmourType}}} {{Armour Save= @{SaveThrow}+ }} {{Modifiers= ?{Save Modifiers|No,0|+2,2|+1,1|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5} }} {{Save Roll= [[1D6+?{Save Modifiers|No,0|+2,2|+1,1|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]}} }}"></button>
+      <button name="roll_save" type="roll" value="&{template:necShield}} {{title=@{character_name}&#39;s armour }} {{subtitle= @{character_name} using @{ArmourType}}} {{Armour Save= @{SaveThrow}+ }} {{Modifiers= ?{Save Modifiers|No,0|+2,2|+1,1|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5} }} {{Save Roll= [[1D6+?{Save Modifiers|No,0|+2,2|+1,1|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]}} }}"></button>
       <select name="attr_ArmourType">
         <option value="None" selected="selected">None</option>
         <option value="Heavy Armour">Heavy Armour</option>
@@ -137,6 +142,7 @@
         <option value="Light Armour">Light Armour</option>
         <option value="Light+Shield">Light+Shield</option>
         <option value="Shield">Shield</option>
+        <option value="Special">Special</option>
       </select>
     </div>
   </div
@@ -499,7 +505,7 @@
 {{#rollWasCrit() Roll to wound}}
   <div class="sheet-critical">
     <div class="sheet-critical-title">
-      CRITICAL HIT!
+      CRITICAL HIT! {{Roll to Crit?=[D6](~JustD6)}}
     </div>
 
     <img
@@ -612,6 +618,32 @@ https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/
     })(i);
   }
 })();
+
+ // ---------------- BALLISTIC SKILL CALCULATION ----------------
+
+  function calculateBallisticSkill() {
+    getAttrs(["BS"], function (values) {
+      var bs = parseInt(values.BS, 10);
+
+      if (isNaN(bs)) {
+        bs = 0;
+      }
+
+      setAttrs({
+        BS_Calculated: 7 - bs
+      });
+    });
+  }
+
+  // Recalculate whenever BS changes.
+  on("change:BS", function () {
+    calculateBallisticSkill();
+  });
+
+  // Calculate when the character sheet is first opened.
+  on("sheet:opened", function () {
+    calculateBallisticSkill();
+  });
 
 
 </script>
