@@ -320,6 +320,43 @@ div.sheet-stats span{
   padding-left: 0px;
 }
 
+/* ------------------------------------------------------------ */
+/* CALCULATED BALLISTIC SKILL                                  */
+
+div.sheet-stats div.sheet-bs-block {
+  position: relative;
+}
+
+div.sheet-stats div.sheet-bs-calculated {
+  position: relative;
+  width: 45px;
+  height: 35px;
+  flex-shrink: 0;
+}
+
+div.sheet-stats div.sheet-bs-calculated input {
+  position: absolute;
+  top: 0;
+  left: -10;
+  width: 20px;
+  height: 35px;
+  margin: 0;
+  padding: 0;
+  z-index: 2;
+  background: transparent;
+  border: none;
+}
+
+div.sheet-stats div.sheet-bs-calculated img.sheet-bs-plus {
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  left: 10px;
+  top: 5px;
+  z-index: 1;
+  pointer-events: none;
+}
+
 
 
 /* ------------------------------------------------------------ */

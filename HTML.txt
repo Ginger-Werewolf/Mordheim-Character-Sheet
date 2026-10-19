@@ -5,6 +5,7 @@
   <div class="logo section">
       <div class="stat-block flex-center">
         <button name="roll_JustD6" type="roll" value="[[1D6]]"></button>
+        
       </div>
   </div>
 
@@ -34,12 +35,25 @@
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Blanking-Skull.png" alt="No Roll" style="width:25px;height:25px;">
     </div>
 
-    <div class="stat-block flex-center">
+    <!-- <div class="stat-block flex-center">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BS01.png" alt="No Roll" style="width:35px;height:35px;">
       <input name="attr_BS" type="number" value="0">
       <input name="attr_BS_Calculated" type="number" value="7" readonly>
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Plus.png" alt="No Roll" style="width:25px;height:25px;">
+    </div> -->
+    
+    
+    <div class="stat-block flex-center sheet-bs-block">
+        <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/BS01.png" alt="Ballistic Skill" style="width:35px;height:35px;">
+
+        <input name="attr_BS" type="number" value="0">
+
+        <div class="sheet-bs-calculated">
+            <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Plus2.png" alt="" class="sheet-bs-plus">
+            <input name="attr_BS_Calculated" type="number" value="7" readonly>
+        </div>
     </div>
+
 
     <div class="stat-block flex-center">
       <img src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/S01.png" alt="No Roll" style="width:35px;height:35px;">
@@ -293,7 +307,7 @@
    
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS} [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} {{Critical Type= @{RngWeap01_Crit} }}"> </button>
+      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] Needing a @{BS_Calculated}&#43;  [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} {{Critical Type= @{RngWeap01_Crit} }}"> </button>
       <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
       <input name="attr_RngWeap01_rng" type="number" value="0">
       <input name="attr_RngWeap01_StrBon" type="number" value="0">
@@ -308,7 +322,7 @@
     </div>
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{BS} [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} {{Critical Type= @{RngWeap02_Crit} }}"> </button>
+      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] Needing a @{BS_Calculated}&#43;  [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} {{Critical Type= @{RngWeap02_Crit} }}"> </button>
       <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
       <input name="attr_RngWeap02_rng" type="number" value="0">
       <input name="attr_RngWeap02_StrBon" type="number" value="0">
