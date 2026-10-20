@@ -1,0 +1,53 @@
+Macros
+<Name of Macro> "Description of Macro"
+<Macro itself>
+======================================================
+Leadership "For Leadership and Break Checks"
+
+&{template:necGeneric} {{title=@{selected|character_name}'s Leadership Test}} {{subtitle=@{selected|character_name}'s Leadership Test &le; [[?{Whose Leadership?|Own,@{selected|LD}|Another Character,?{Other Character's Ld?}}]]}} {{Roll=[[2d6cs<[[?{Whose Leadership?|Own,@{selected|LD}|Another Character,?{Other Character's Ld?}}]]cf>[[?{Whose Leadership?|Own,@{selected|LD}|Another Character,?{Other Character's Ld?}}+1]]]]}}">
+======================================================
+
+M1 "Melee Weapon #1 of selected Warrior"
+
+&{template:necMelee}} {{title=@{selected|character_name}&#39;s @{selected|MeleeWeap01_name} }} {{subtitle=@{selected|character_name}&#39;s @{selected|MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{selected|WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{selected|character_name}&#39;s WS @{selected|WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{selected|S}}} {{Weapon Str Mod=  &#43;@{selected|MeleeWeap01_StrBon} [Roll To Wound](~MeleeWnd01)}} {{Weapon Traits= @{selected|MeleeWeap01_Traits} }}  
+======================================================     
+
+
+M2 "Melee Weapon #2 of selected Warrior" 
+
+&{template:necMelee}} {{title=@{selected|character_name}&#39;s @{selected|MeleeWeap02_name} }} {{subtitle=@{selected|character_name}&#39;s @{selected|MeleeWeap02_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{selected|WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{selected|character_name}&#39;s WS @{selected|WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{selected|S}}} {{Weapon Str Mod=  &#43;@{selected|MeleeWeap02_StrBon} [Roll To Wound](~MeleeWnd02)}} {{Weapon Traits= @{selected|MeleeWeap02_Traits} }}
+======================================================
+
+M3 "Melee Weapon #3 of selected Warrior" 
+
+&{template:necMelee}} {{title=@{selected|character_name}&#39;s @{selected|MeleeWeap03_name} }} {{subtitle=@{selected|character_name}&#39;s @{selected|MeleeWeap03_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{selected|WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{selected|character_name}&#39;s WS @{selected|WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{selected|S}}} {{Weapon Str Mod=  &#43;@{selected|MeleeWeap03_StrBon} [Roll To Wound](~MeleeWnd03)}} {{Weapon Traits= @{selected|MeleeWeap03_Traits} }}
+======================================================
+
+R1 "Ranged Weapon #1 of selected Warrior" 
+
+&{template:necRanged}} {{title=@{selected|character_name}&#39;s @{selected|RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{selected|RngWeap01_rng}&#39;}} {{Weapon Strength=  @{selected|RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{selected|BS} [Roll To Wound](~selected|RngWnd01)}} {{Weapon Traits= @{selected|RngWeap01_Traits} }} {{Critical Type= @{selected|RngWeap01_Crit} }}
+======================================================
+
+R2 "Ranged Weapon #2 of selected Warrior" 
+
+&{template:necRanged}} {{title=@{selected|character_name}&#39;s @{selected|RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{selected|RngWeap02_rng}&#39;}} {{Weapon Strength=  @{selected|RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] v&#39;s a BS of @{selected|BS} [Roll To Wound](~selected|RngWnd02)}} {{Weapon Traits= @{selected|RngWeap02_Traits} }} {{Critical Type= @{selected|RngWeap02_Crit} }}
+======================================================
+
+Spellcasting "Test a Spells Difficulty"
+
+&{template:necGeneric} {{title=@{selected|character_name}'s Attempt to cast a Spell}} {{subtitle=@{selected|character_name}'s attempt to cast a Spell of difficulty ?{Difficulty} }} {{Roll=[[2d6]]>?{Difficulty}}}
+======================================================
+
+Save "Make a Saving throw"
+
+&{template:necShield}} {{title=@{selected|character_name}&#39;s armour }} {{subtitle=@{selected|character_name} using @{selected|ArmourType}}} {{Armour Save= @{selected|SaveThrow}+ }} {{Modifiers= ?{Save Modifiers|No,0|+2,2|+1,1|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5} }} {{Save Roll= [[1D6+?{Save Modifiers|No,0|+2,2|+1,1|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]}} }}
+======================================================
+
+Warband-Order "Roll for your warbands turn order"
+
+&{template:necGeneric} {{title=@{selected|character_name}'s Initiative Test}} {{subtitle=@{selected|character_name}'s Warband Initiative}} {{Roll=[[1d6&{tracker}]]}}
+======================================================
+
+Initiative-Test "Test Initiative, if you can climb or fall off stuff"
+
+&{template:necGeneric} {{title=@{selected|character_name}'s Initiative Test}} {{subtitle=@{selected|character_name}'s Initiative Test &le; [[@{selected|I}]]}} {{Roll=[[1d6cs&lt;[[@{selected|I}]]cf&gt;[[@{selected|I}+1]]]]}}
