@@ -1075,7 +1075,7 @@ div.sheet-MidBReak span{
 }
 .sheet-rolltemplate-necMelee .sheet-title img.sheet-NecroLogo {
   width: 298px;
-  height: 33px;
+  height: 66px;
   float: middle;
 }
 
@@ -1416,6 +1416,133 @@ div.sheet-MidBReak span{
   padding: 5px;
   text-align: center;
 }
+
+/* ------------------------------------------------------------ */
+
+/* ------------------------------------------------------------ */
+
+.sheet-rolltemplate-MordheimInjury {
+  margin-left: -37px;
+}
+.withoutavatars .sheet-rolltemplate-MordheimInjury {
+  margin-left: -7px;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-container {
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-header {
+  background-color: var(--header-bg-color);
+  color: var(--header-text-color);
+  text-align: left;
+  text-transform: capitalize;
+  padding: 5px;
+  border-bottom: 2px solid black;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-title {
+  font-size: 1.2em;
+  font-weight: bold;
+  font-family: 'Times New Roman', monospace;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-title img.sheet-phoenix {
+  width: 33px;
+  height: 33px;
+  float: right;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-title img.sheet-NecroLogo {
+  width: 298px;
+  height: 33px;
+  float: middle;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-subtitle {
+  font-size: 0.9em;
+  font-family: 'Times New Roman', monospace;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-container {
+  --header-bg-color: #D7D3C6;
+  --header-text-color: #000000;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-container.sheet-color-black {
+  --header-bg-color: #00FF00;
+  --header-text-color: #000000;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-container.sheet-color-green {
+  --header-bg-color: #008000;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-container.sheet-color-black {
+  --header-bg-color: #000000;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-container.sheet-color-white {
+  --header-bg-color: #FFF;
+  --header-text-color: #000;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-content {
+  display: grid;
+  background: #E3DAC9;
+  color: black;
+  grid-template-columns: auto auto;
+  line-height: 1.4em;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-content > div {
+  padding: 5px;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-content .sheet-key {
+  font-weight: bold;
+  padding-right: 10px;
+  text-align: right;
+  font-family: 'Times New Roman', monospace;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-content :nth-child(4n+3),
+.sheet-rolltemplate-MordheimInjury .sheet-content :nth-child(4n) {
+  background: #D7D3C6;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-desc {
+  grid-column: span 2;
+  padding: 5px;
+  text-align: center;
+  font-family: 'Times New Roman', monospace;
+}
+.sheet-rolltemplate-MordheimInjury .sheet-critical {
+  background: #E3DAC9;
+  color: black;
+  text-align: center;
+  padding: 8px;
+  border-top: 3px solid black;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-critical-title {
+  font-family: 'Times New Roman', monospace;
+  font-size: 1.3em;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.sheet-rolltemplate-MordheimInjury img.sheet-critical-table {
+  display: block;
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  margin: 5px auto;
+}
+
+.sheet-rolltemplate-MordheimInjury .sheet-critical-roll {
+  font-family: 'Times New Roman', monospace;
+  font-weight: bold;
+  padding: 5px;
+}
+
+/* ------------------------------------------------------------ */
+
 
 /* ------------------------------------------------------------ */
 

@@ -5,7 +5,8 @@
   <div class="logo section">
       <div class="stat-block flex-center">
         <button name="roll_JustD6" type="roll" value="[[1D6]]"></button>
-        
+        <label> </label>
+        <button name="roll_InjuryRolling" type="roll" value="&{template:MordheimInjury} {{title=@{character_name}'s Injury Roll}} {{Injury Type=?{Injury Type?|Normal Injury,NormalInjury|Concussive Injury,ConcussiveInjury}}} {{Injury Roll=[[1d6]]}}"></button></button>
       </div>
   </div>
 
@@ -318,7 +319,7 @@
         <option value="Missile">Missile</option>
       </select>
       <label> </label>
-      <button name="roll_RngWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap01_AP}}} {{Weapon Trait=@{RngWeap01_Traits}}} {{Critical Type=@{RngWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <button name="roll_RngWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap01_AP}}} {{Weapon Trait=@{RngWeap01_Traits}}} {{Critical Type=@{RngWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}} {{Roll to Injure?=[Injure](~InjuryRolling)}}">
     </div>
     
     <div class="stat-block flex-center">
@@ -333,7 +334,7 @@
         <option value="Missile">Missile</option>
       </select>
       <label> </label>
-      <button name="roll_RngWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap02_AP}}} {{Weapon Trait=@{RngWeap02_Traits}}} {{Critical Type=@{RngWeap02_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <button name="roll_RngWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{RngWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{RngWeap02_AP}}} {{Weapon Trait=@{RngWeap02_Traits}}} {{Critical Type=@{RngWeap02_Crit}}} {{Roll to Crit?=[D6](~JustD6)}} {{Roll to Injure?=[Injure](~InjuryRolling)}}">
     </div>
 	
   </div>
@@ -361,7 +362,7 @@
   <div class="meleew section">
    
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWnd01)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} {{Critical Type= @{MeleeWeap01_Crit} }}"> </button>
+      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{character_name}&#39;s WS @{WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap01_StrBon} [Roll To Wound](~MeleeWnd01)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} {{Critical Type= @{MeleeWeap01_Crit} }}"> </button>
       <input name="attr_MeleeWeap01_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap01_StrBon" type="number" value="0">
       <input name="attr_MeleeWeap01_AP" type="number" value="0">
@@ -374,9 +375,10 @@
         <option value="Thrusting">Thrusting</option>
       </select>
       <label> </label>
-      <button name="roll_MeleeWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap01_AP}}} {{Weapon Trait=@{MeleeWeap01_Traits}}} {{Critical Type=@{MeleeWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <button name="roll_MeleeWnd01" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap01_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap01_AP}}} {{Weapon Trait=@{MeleeWeap01_Traits}}} {{Critical Type=@{MeleeWeap01_Crit}}} {{Roll to Crit?=[D6](~JustD6)}} {{Roll to Injure?=[Injure](~InjuryRolling)}}">
       </button>
     </div>
+
 
     <div class="stat-block flex-center">
       <button name="roll_MeleeAttack02" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap02_name}}} {{subtitle=@{character_name}&#39;s @{MeleeWeap02_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Native Strength=[[@{S}]]}} {{Weapon Str Mod=  &#43;@{MeleeWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] v&#39;s a WS of @{WS}+ [Roll To Wound](~MeleeWnd02)}} {{Weapon Traits= @{MeleeWeap02_Traits} }} {{Critical Type= @{MeleeWeap02_Crit} }}"> </button>
@@ -392,7 +394,7 @@
         <option value="Thrusting">Thrusting</option>
       </select>
       <label> </label>
-      <button name="roll_MeleeWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap02_AP}}} {{Weapon Trait=@{MeleeWeap02_Traits}}} {{Critical Type=@{MeleeWeap02_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <button name="roll_MeleeWnd02" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap02_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap02_AP}}} {{Weapon Trait=@{MeleeWeap02_Traits}}} {{Critical Type=@{MeleeWeap02_Crit}}} {{Roll to Crit?=[D6](~JustD6)}} {{Roll to Injure?=[Injure](~InjuryRolling)}}">
       </button>
     </div>
 
@@ -410,7 +412,7 @@
         <option value="Thrusting">Thrusting</option>
       </select>
       <label> </label>
-      <button name="roll_MeleeWnd03" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap03_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap03_AP}}} {{Weapon Trait=@{MeleeWeap03_Traits}}} {{Critical Type=@{MeleeWeap03_Crit}}} {{Roll to Crit?=[D6](~JustD6)}}">
+      <button name="roll_MeleeWnd03" type="roll" value="&{template:necWound} {{title=@{character_name}'s Roll to Wound}} {{subtitle=with a Strength of @{S}+@{MeleeWeap03_StrBon} v's Toughness ?{Toughness of Target}}} {{Roll to wound=[[1d6cs6]]}} {{Weapon AP=@{MeleeWeap03_AP}}} {{Weapon Trait=@{MeleeWeap03_Traits}}} {{Critical Type=@{MeleeWeap03_Crit}}} {{Roll to Crit?=[D6](~JustD6)}} {{Roll to Injure?=[Injure](~InjuryRolling)}}">
       </button>
     </div>
         
@@ -479,7 +481,7 @@
 <rolltemplate class="sheet-rolltemplate-necMelee">  
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Melee-Attack-Banner.png" alt="Melee Attack"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/WS{{WS}}.png" alt="Melee Attack"> </div>{{/title}}
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
     </div>
     <div class="sheet-content">
@@ -541,6 +543,38 @@
     </div>
   </div>
 </rolltemplate>
+
+
+<!-- -------------------------- -->
+<!-- -------------------------- -->
+<rolltemplate class="sheet-rolltemplate-MordheimInjury">
+  <div class="sheet-container sheet-color-{{color}}">
+
+    <div class="sheet-header">
+      <div class="sheet-title">
+        {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/InjuryTableTitle.png" alt="Mordheim"> </div>{{/title}}
+      </div>
+    </div>
+
+    <div class="sheet-content">
+      {{#allprops() title subtitle desc color Injury Type}}
+        <div class="sheet-key">{{key}}</div>
+        <div class="sheet-value">{{value}}</div>
+      {{/allprops() title subtitle desc color Injury Type}}
+    </div>
+
+    <div class="sheet-critical">
+      <img
+        class="sheet-critical-table"
+        src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/{{Injury Type}}.png"
+        alt="Injury Table">
+    </div>
+
+  </div>
+</rolltemplate>
+
+
+
 <!-- -------------------------- -->
 <rolltemplate class="sheet-rolltemplate-necShield">
   <div class="sheet-container sheet-color-{{color}}">
@@ -559,10 +593,7 @@
     </div>
   </div>
 </rolltemplate>
-<!--
-https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/T0KFI9q.png
-</rolltemplate>
--->
+
 
 <!-- ---------------------------SHEET WORKERS-----------------  -->
 
