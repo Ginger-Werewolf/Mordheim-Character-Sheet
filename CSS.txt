@@ -826,7 +826,7 @@ div.sheet-weaponsend{
 
 
 div.sheet-weaponsend div.sheet-stat-block{
-  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RangedSeparator01.png);
+  background-image: url(https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/RangedSeparatorv2.png);
      /* DONE Boarder No8 */
   background-repeat: no-repeat;
   background-size: contain;

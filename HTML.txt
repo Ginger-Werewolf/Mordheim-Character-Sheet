@@ -4,12 +4,7 @@
 <!-- LOGO SECTION -->
   <div class="logo section">
       <div class="stat-block flex-center">
-        <button name="roll_JustD6" type="roll" value="[[1D6]]"></button>
-        <label> </label>
-        <label> </label>
-        <label> </label>
-        <label> </label>
-        <button name="roll_InjuryRolling" type="roll" value="&{template:MordheimInjury} {{title=@{character_name}'s Injury Roll}} {{Injury Type=?{Injury Type?|Normal Injury,NormalInjury|Concussive Injury,ConcussiveInjury}}} {{Injury Roll=[[1d6]]}}"></button></button>
+            <label> </label>
       </div>
   </div>
 
@@ -344,7 +339,9 @@
   
   <div class="weaponsend section">
     <div class="stat-block flex-center">
-      <label> </label>
+        <button name="roll_InjuryRolling" type="roll" value="&{template:MordheimInjury} {{title=@{character_name}'s Injury Roll}} {{Injury Type=?{Injury Type?|Normal Injury,NormalInjury|Concussive Injury,ConcussiveInjury}}} {{Injury Roll=[[1d6]]}}"></button>
+        <label> </label>
+        <button name="roll_JustD6" type="roll" value="[[1D6]]"></button>
     </div>
   </div>
 
@@ -420,9 +417,7 @@
   
   <div class="meleewend section">
     <div class="stat-block flex-center">
-      <label> </label>
-      <label> </label>
-      <label> </label> 
+        <label> </label>
     </div>
   </div>
 
