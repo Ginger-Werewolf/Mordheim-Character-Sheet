@@ -6,6 +6,9 @@
       <div class="stat-block flex-center">
         <button name="roll_JustD6" type="roll" value="[[1D6]]"></button>
         <label> </label>
+        <label> </label>
+        <label> </label>
+        <label> </label>
         <button name="roll_InjuryRolling" type="roll" value="&{template:MordheimInjury} {{title=@{character_name}'s Injury Roll}} {{Injury Type=?{Injury Type?|Normal Injury,NormalInjury|Concussive Injury,ConcussiveInjury}}} {{Injury Roll=[[1d6]]}}"></button></button>
       </div>
   </div>
@@ -308,8 +311,7 @@
    
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] Needing a @{BS_Calculated}&#43;  [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} }}"> </button>
-      <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
+      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] to hit modifier, with a @{BS_Calculated} }} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] (Modifiers Applied) [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} }}"> </button>      <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
       <input name="attr_RngWeap01_rng" type="number" value="0">
       <input name="attr_RngWeap01_StrBon" type="number" value="0">
       <input name="attr_RngWeap01_AP" type="number" value="0">
@@ -323,8 +325,7 @@
     </div>
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] Needing a @{BS_Calculated}&#43;  [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} }}"> </button>
-      <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
+      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] to hit modifier, with a @{BS_Calculated} }} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] (Modifiers Applied) [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} }}"> </button>      <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
       <input name="attr_RngWeap02_rng" type="number" value="0">
       <input name="attr_RngWeap02_StrBon" type="number" value="0">
       <input name="attr_RngWeap02_AP" type="number" value="0">
@@ -362,7 +363,7 @@
   <div class="meleew section">
    
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{character_name}&#39;s WS @{WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{S}}} {{Weapon Str Mod=  &#43;@{MeleeWeap01_StrBon} [Roll To Wound](~MeleeWnd01)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} "> </button>
+      <button name="roll_MeleeAttack01" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap01_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap01_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] (Modifier Applied) }} {{Opponent&#39;s WS=[[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{S}}} {{Weapon Str Mod=  &#43;@{MeleeWeap01_StrBon} [Roll To Wound](~MeleeWnd01)}} {{Weapon Traits= @{MeleeWeap01_Traits} }} "> </button>
       <input name="attr_MeleeWeap01_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap01_StrBon" type="number" value="0">
       <input name="attr_MeleeWeap01_AP" type="number" value="0">
@@ -380,7 +381,7 @@
     </div>
     
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack02" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap02_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap02_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{character_name}&#39;s WS @{WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{S}}} {{Weapon Str Mod=  &#43;@{MeleeWeap02_StrBon} [Roll To Wound](~MeleeWnd02)}} {{Weapon Traits= @{MeleeWeap02_Traits} }} "> </button>
+      <button name="roll_MeleeAttack02" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap02_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap02_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] (Modifier Applied) }} {{Opponent&#39;s WS=[[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{S}}} {{Weapon Str Mod=  &#43;@{MeleeWeap02_StrBon} [Roll To Wound](~MeleeWnd02)}} {{Weapon Traits= @{MeleeWeap02_Traits} }} "> </button>
       <input name="attr_MeleeWeap02_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap02_StrBon" type="number" value="0">
       <input name="attr_MeleeWeap02_AP" type="number" value="0">
@@ -398,7 +399,7 @@
     </div>
     
     <div class="stat-block flex-center">
-      <button name="roll_MeleeAttack03" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap03_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap03_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] @{character_name}&#39;s WS @{WS} v's Opponent&#39;s WS [[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{S}}} {{Weapon Str Mod=  &#43;@{MeleeWeap03_StrBon} [Roll To Wound](~MeleeWnd03)}} {{Weapon Traits= @{MeleeWeap03_Traits} }} "> </button>
+      <button name="roll_MeleeAttack03" type="roll" value="&{template:necMelee}} {{title=@{character_name}&#39;s @{MeleeWeap03_name} }} {{subtitle=@{character_name}&#39;s @{MeleeWeap03_name} with a [[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]] to hit modifier}} {{WS=@{WS}}} {{Attack Roll= [[1D6cs6+[[?{Additional To Hit Modifiers|No,0|+1,1|+2,2|+3,3|+4,4|+5,5|-1,-1|-2,-2|-3,-3|-4,-4|-5,-5}]]]] (Modifier Applied) }} {{Opponent&#39;s WS=[[?{Opponents WS}]] (See Chart)}} {{Native Strength=@{S}}} {{Weapon Str Mod=  &#43;@{MeleeWeap03_StrBon} [Roll To Wound](~MeleeWnd03)}} {{Weapon Traits= @{MeleeWeap03_Traits} }} "> </button>
       <input name="attr_MeleeWeap03_name" type="text" style="width: 120px;" value="Weapon04">
       <input name="attr_MeleeWeap03_StrBon" type="number" value="0">
       <input name="attr_MeleeWeap03_AP" type="number" value="0">
@@ -529,7 +530,7 @@
 <rolltemplate class="sheet-rolltemplate-necGeneric">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Back-necGeneric.png" alt="Mordheim"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Back-necGenericV1.png" alt="Mordheim"> </div>{{/title}}
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
     </div>
     <div class="sheet-content">
@@ -551,7 +552,7 @@
 
     <div class="sheet-header">
       <div class="sheet-title">
-        {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/InjuryTableTitle.png" alt="Mordheim"> </div>{{/title}}
+        {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/InjuryTableTitleV1.png" alt="Mordheim"> </div>{{/title}}
       </div>
     </div>
 
@@ -578,7 +579,7 @@
 <rolltemplate class="sheet-rolltemplate-necShield">
   <div class="sheet-container sheet-color-{{color}}">
     <div class="sheet-header">
-      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-Save-Banner.png" alt="Save"> </div>{{/title}}
+      {{#title}}<div class="sheet-title"><img class="sheet-NecroLogo" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/Armour-Save-BannerV1.png" alt="Save"> </div>{{/title}}
       <!-- {{#title}}<div class="sheet-title">{{title}}<img class="sheet-phoenix" src="https://raw.githubusercontent.com/Ginger-Werewolf/Mordheim-Character-Sheet/main/images/T0KFI9q.png" alt="Shield"> </div>{{/title}} -->
       {{#subtitle}}<div class="sheet-subtitle">{{subtitle}}</div>{{/subtitle}}
     </div>
