@@ -306,7 +306,7 @@
    
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] to hit modifier, with a @{BS_Calculated} }} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] (Modifiers Applied) [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} }}"> </button>      <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
+      <button name="roll_RngWeap01_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap01_name} at BS @{selected|BS}+}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] to hit modifier, needing a @{BS_Calculated}+ }} {{Range= @{RngWeap01_rng}&#39;}} {{Weapon Strength=  @{RngWeap01_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] (Modifiers Applied) [Roll To Wound](~RngWnd01)}} {{Weapon Traits= @{RngWeap01_Traits} }} }}"> </button>      <input name="attr_RngWeap01_name" type="text" style="width: 120px;" value="RngWeap01">
       <input name="attr_RngWeap01_rng" type="number" value="0">
       <input name="attr_RngWeap01_StrBon" type="number" value="0">
       <input name="attr_RngWeap01_AP" type="number" value="0">
@@ -320,7 +320,7 @@
     </div>
     
     <div class="stat-block flex-center">
-      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name}}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] to hit modifier, with a @{BS_Calculated} }} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] (Modifiers Applied) [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} }}"> </button>      <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
+      <button name="roll_RngWeap02_attack" type="roll" value="&{template:necRanged}} {{title=@{character_name}&#39;s @{RngWeap02_name} at BS @{selected|BS}+}} {{subtitle=with a [[?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] to hit modifier, needing a @{BS_Calculated}+ }} {{Range= @{RngWeap02_rng}&#39;}} {{Weapon Strength=  @{RngWeap02_StrBon}}} {{Attack Roll= [[1D6cs6+?{Additional To Hit Modifiers|No,0|+1,1|-1,-1|-2,-2|-3,-3|-4,-4}]] (Modifiers Applied) [Roll To Wound](~RngWnd02)}} {{Weapon Traits= @{RngWeap02_Traits} }} }}"> </button>      <input name="attr_RngWeap02_name" type="text" style="width: 120px;" value="RngWeap02">
       <input name="attr_RngWeap02_rng" type="number" value="0">
       <input name="attr_RngWeap02_StrBon" type="number" value="0">
       <input name="attr_RngWeap02_AP" type="number" value="0">

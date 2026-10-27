@@ -1,5 +1,7 @@
 ## Beta Testing
 
+NB REQUIRES LEGACY SANITIZATION
+
 The Mordheim Character Sheet is currently in beta testing.
 
 The core sheet is complete, but further testing is welcome to identify bugs, calculation errors, display issues and other improvements.
